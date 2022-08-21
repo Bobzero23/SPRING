@@ -1,11 +1,11 @@
-package bean2;
+package bean3;
 
-/*This is just a normal class to create some fields*/
+/*This is a normal class where we create a field*/
 
 /*class*/
 public class Vehicle {
 
-    /*creating a field called name*/
+    /*creating a field*/
     private String name;
 
     /*getter*/
@@ -17,5 +17,4 @@ public class Vehicle {
     public void setName(String name){
         this.name = name;
     }
-
 }
