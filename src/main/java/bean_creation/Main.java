@@ -1,4 +1,4 @@
-package bean1;
+package bean_creation;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

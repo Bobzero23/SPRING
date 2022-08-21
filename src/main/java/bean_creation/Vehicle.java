@@ -1,4 +1,4 @@
-package bean1;
+package bean_creation;
 
 /*In this class we are going to instantiate the vehicle field*/
 

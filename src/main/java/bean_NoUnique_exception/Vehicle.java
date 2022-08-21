@@ -1,11 +1,11 @@
-package bean3;
+package bean_NoUnique_exception;
 
-/*This is a normal class where we create a field*/
+/*This is just a normal class to create some fields*/
 
 /*class*/
 public class Vehicle {
 
-    /*creating a field*/
+    /*creating a field called name*/
     private String name;
 
     /*getter*/
@@ -17,4 +17,5 @@ public class Vehicle {
     public void setName(String name){
         this.name = name;
     }
+
 }

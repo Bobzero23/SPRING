@@ -1,4 +1,4 @@
-package bean2;
+package bean_NoUnique_exception;
 
 /*imports*/
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

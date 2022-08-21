@@ -1,4 +1,4 @@
-package bean1;
+package bean_creation;
 
 /*must imports*/
 import org.springframework.context.annotation.Bean;

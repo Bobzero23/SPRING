@@ -1,5 +1,6 @@
-package bean3;
+package bean_with_names;
 
+/*imports*/
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /*main class*/

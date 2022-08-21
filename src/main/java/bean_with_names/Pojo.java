@@ -1,4 +1,4 @@
-package bean3;
+package bean_with_names;
 
 /*This is the bean class*/
 

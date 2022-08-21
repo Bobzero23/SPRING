@@ -1,15 +1,15 @@
-package bean2;
+package bean_primary_anotation;
 
-/*This is just a normal class to create some fields*/
+/*A normal class for creating the field*/
 
 /*class*/
 public class Vehicle {
 
-    /*creating a field called name*/
+    /*creating the field*/
     private String name;
 
     /*getter*/
-    public String getName(){
+    public String getName() {
         return name;
     }
 
@@ -17,5 +17,4 @@ public class Vehicle {
     public void setName(String name){
         this.name = name;
     }
-
 }

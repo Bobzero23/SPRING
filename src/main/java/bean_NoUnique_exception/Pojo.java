@@ -1,4 +1,4 @@
-package bean2;
+package bean_NoUnique_exception;
 
 /*This is the class which will have all the beans in it*/
 
