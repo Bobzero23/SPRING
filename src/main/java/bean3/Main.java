@@ -1,5 +1,6 @@
 package bean3;
 
+/*imports*/
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /*main class*/
