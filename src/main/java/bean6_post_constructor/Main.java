@@ -17,7 +17,5 @@ public class Main {
         /*displaying the bean*/
         System.out.println("The vehicle in the bean is: " + vehicle.getName());
 
-
-
     }
 }
