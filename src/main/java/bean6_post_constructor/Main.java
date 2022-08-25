@@ -1,5 +1,6 @@
 package bean6_post_constructor;
 
+/*imports*/
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /*main class*/

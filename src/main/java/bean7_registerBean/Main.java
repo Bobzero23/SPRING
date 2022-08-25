@@ -38,7 +38,7 @@ public class Main {
         System.out.println("The random number generated is: " + randomNumber);
 
         /*creating a condition to register a bean accordingly*/
-        if( randomNumber % 2 == 0){
+        if (randomNumber % 2 == 0){
             context.registerBean("BMW", Vehicle.class, BMWSupplier);
         }else {
             context.registerBean("Audi", Vehicle.class, AudiSupplier);
