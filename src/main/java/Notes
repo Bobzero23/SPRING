@@ -9,3 +9,5 @@ AUTOWIRED
 1. Can bu used on top of the class, constructor or class fields
 2. This is an example of Dependency Injection (Dynamic)
 3. We initialized the component annotation on top of the pojo classes to make things easier
+4. This method is not recommended because you can't initialize a autowired field as final but still most
+   developers almost 99% of developers are using this because it is easy to use ..
