@@ -4,9 +4,8 @@ package bean9_wiring1_methodCall;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/*This is a Pojo class*/
 @Configuration
-public class Pojo {
+public class ProjConfig {
 
     @Bean
     /*creating a Vehicle bean called Ferrari*/

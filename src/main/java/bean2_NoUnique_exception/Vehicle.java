@@ -2,7 +2,7 @@ package bean2_NoUnique_exception;
 
 /*This is just a normal class to create some fields*/
 
-/*class*/
+/*pojo class*/
 public class Vehicle {
 
     /*creating a field called name*/

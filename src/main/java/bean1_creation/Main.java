@@ -14,7 +14,7 @@ public class Main {
         System.out.println("The name from NON-POJO class: " + vehicle.getName());
 
         /*now creating object of POJO class and initiating the class*/
-        var context = new AnnotationConfigApplicationContext(Pojo.class);
+        var context = new AnnotationConfigApplicationContext(ProjConfig.class);
 
         /*creating object to fetch the Bean*/
         Vehicle veh = context.getBean(Vehicle.class);

@@ -4,3 +4,8 @@ BEANS WITH XML
 3. Here the xml file acts as the Pojo class
 3. In the main method we have to use another way of creating object of IoC Container go check it
 and there you pass the name of the xml file folder you created
+
+AUTOWIRED
+1. Can bu used on top of the class, constructor or class fields
+2. This is an example of Dependency Injection (Dynamic)
+3. We initialized the component annotation on top of the pojo classes to make things easier

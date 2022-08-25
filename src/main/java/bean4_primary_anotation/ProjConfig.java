@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 
 @Configuration
-public class Pojo {
+public class ProjConfig {
 
     /*CREATING THREE BEANS WITH THE SAME NAME WITH ONE PRIMARY ANNOTATION*/
 

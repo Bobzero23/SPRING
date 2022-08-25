@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) {
 
         /*creating object of the IoC Container*/
-        var context = new AnnotationConfigApplicationContext(Pojo.class);
+        var context = new AnnotationConfigApplicationContext(ProjConfig.class);
 
         /*creating object of the Vehicle class*/
         Vehicle vehicle1 = new Vehicle();

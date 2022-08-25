@@ -1,8 +1,6 @@
 package bean4_primary_anotation;
 
-/*A normal class for creating the field*/
-
-/*class*/
+/*pojo class*/
 public class Vehicle {
 
     /*creating the field*/

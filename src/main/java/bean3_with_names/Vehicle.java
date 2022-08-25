@@ -2,7 +2,7 @@ package bean3_with_names;
 
 /*This is a normal class where we create a field*/
 
-/*class*/
+/*pojo class*/
 public class Vehicle {
 
     /*creating a field*/

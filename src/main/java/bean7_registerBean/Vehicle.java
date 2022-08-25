@@ -1,6 +1,6 @@
 package bean7_registerBean;
 
-/*A field class*/
+/*pojo class*/
 public class Vehicle {
 
     /*creating a field*/

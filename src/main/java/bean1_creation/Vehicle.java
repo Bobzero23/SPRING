@@ -2,7 +2,7 @@ package bean1_creation;
 
 /*In this class we are going to instantiate the vehicle field*/
 
-/*Normal class*/
+/*pojo class*/
 public class Vehicle {
 
     /*field*/

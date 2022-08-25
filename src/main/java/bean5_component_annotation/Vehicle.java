@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import javax.lang.model.util.AbstractElementVisitor8;
 import javax.lang.model.util.SimpleTypeVisitor8;
 
+/*pojo class*/
 @Component
 public class Vehicle {
 

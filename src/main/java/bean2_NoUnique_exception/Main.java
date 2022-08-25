@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         /*creating object of the Pojo class using annotation config as usual*/
-        var context = new AnnotationConfigApplicationContext(Pojo.class);
+        var context = new AnnotationConfigApplicationContext(ProjConfig.class);
 
         /*getting the bean the wrong because there multiple beans with the same name*/
         /*We have to create the object of teh Vehicle class because that is the class where the method type came from*/

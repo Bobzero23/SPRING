@@ -1,13 +1,12 @@
 package bean3_with_names;
 
-/*This is the bean class*/
 
 /*imports*/
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class Pojo {
+public class ProjConfig {
 
     /*customizing a bean name using name = "" */
     @Bean(name = "Cheap vehicle")

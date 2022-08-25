@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
         /*creating the object of the bean class*/
-        var context = new AnnotationConfigApplicationContext(Pojo.class);
+        var context = new AnnotationConfigApplicationContext(ProjConfig.class);
 
         /*creating object the object of Vehicle and getting the bean with name and displaying it*/
         Vehicle veh1 = context.getBean("Cheap vehicle", Vehicle.class);

@@ -1,6 +1,6 @@
 package bean8_with_xml;
 
-/*field class*/
+/*pojo class*/
 public class Vehicle {
 
     /*creating a field*/

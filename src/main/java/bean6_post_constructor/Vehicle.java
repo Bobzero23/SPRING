@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-/*field class*/
+/*pojo class*/
 @Component
 public class Vehicle {
 

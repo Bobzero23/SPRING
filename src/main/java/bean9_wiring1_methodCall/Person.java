@@ -1,6 +1,6 @@
 package bean9_wiring1_methodCall;
 
-/*bean class*/
+/*pojo class*/
 public class Person {
 
     /*creating fields*/

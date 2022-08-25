@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class Pojo {
+public class ProjConfig {
 
     /*creating a bean method to return a name of the vehicle*/
     @Bean
