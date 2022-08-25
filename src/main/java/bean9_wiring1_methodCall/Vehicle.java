@@ -29,6 +29,6 @@ public class Vehicle {
     /*to String method*/
     @Override
     public String toString() {
-     return "Vehicle name is: " + name;
+     return  name;
     }
 }

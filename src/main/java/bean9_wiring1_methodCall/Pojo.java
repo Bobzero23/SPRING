@@ -21,7 +21,7 @@ public class Pojo {
     Person person(){
         Person person = new Person();
         person.setName("Bobzero");
-        person.setVehicle(vehicle());
+        person.setVehicle(vehicle()); // HERE IS WHERE THE WIRING HAPPENS
         return person;
     }
 
