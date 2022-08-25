@@ -1,4 +1,4 @@
-package bean10_autowired;
+package bean10_autowired_field;
 
 /*imports*/
 import org.springframework.stereotype.Component;
