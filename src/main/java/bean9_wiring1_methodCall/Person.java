@@ -22,9 +22,14 @@ public class Person {
         this.name = name;
     }
 
-    /* just a method*/
-    public void method(){
-        System.out.println("Method from Person class");
+    /*getting the vehicle*/
+    public Vehicle getVehicle(){
+        return vehicle;
+    }
+
+    /*setting the vehicle*/
+    public void setVehicle(Vehicle vehicle){
+        this.vehicle = vehicle;
     }
 
 
