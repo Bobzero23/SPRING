@@ -12,3 +12,13 @@ AUTOWIRED
 4. This method is not recommended because you can't initialize a autowired field as final but still most
    developers almost 99% of developers are using this because it is easy to use ..
 5. Use this method with annotation on the constructor that's the better way because it allows finals fields
+
+AUTO WIRING DEEP DIVING
+1. When we use @autowired with constructor we might have more than one pojo class and we might have more than one
+   beans and in case sometimes they might have the same name, which lead us to NoUnique error but as we know we use
+   the @primary annotation we might get rid of that error, if we don't have it there are more steps which Spring follows
+   to check before giving the error check the codes.
+
+QUALIFIER ANNOTATION
+1. We use this annotation when we use @autowired annotation and when we want to get a bean using their name so
+   we use this annotation to pass the name.
