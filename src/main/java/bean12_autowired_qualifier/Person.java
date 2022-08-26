@@ -1,6 +1,8 @@
 package bean12_autowired_qualifier;
 
 /*imports*/
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -13,8 +15,9 @@ public class Person {
     /*declaring vehicle field*/
     private Vehicle vehicle;
 
+    @Autowired
     /*constructor*/
-    Person(Vehicle vehicle){
+    Person(@Qualifier("vehicle1") Vehicle vehicle){
         System.out.println("Person bean is created");
         this.vehicle = vehicle;
     }
@@ -32,11 +35,6 @@ public class Person {
     /*getter for vehicle*/
     public Vehicle getVehicle(){
         return vehicle;
-    }
-
-    /*setter for vehicle*/
-    public void setVehicle(Vehicle vehicle){
-        this.vehicle = vehicle;
     }
 
 }

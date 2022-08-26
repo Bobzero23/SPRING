@@ -19,4 +19,10 @@ public class Vehicle {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    /*to string method*/
+    public String toString(){
+        return name;
+    }
 }
