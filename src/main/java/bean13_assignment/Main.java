@@ -15,26 +15,14 @@ public class Main {
         /*getting the bean of the person*/
         Person person = context.getBean(Person.class);
 
-//        /*getting the bean of the vehicle3*/
-//        Vehicle vehicle = context.getBean(Vehicle.class);
-
         /*displaying the bean of the person*/
-        System.out.println("The bean for person is: " + person.getName());
+        System.out.println("The bean of the person is: " + person.getName());
 
-//        /*displaying the bean of vehicle3*/
-//        System.out.println("The bean of the vehicle3 is: " + vehicle.getName());
-//
-//        /*displaying the vehicle bean of the person*/
-//        System.out.println("The vehicle bean of the person is: " + person.getVehicle());
-//
-//        /*getting the bean of the service*/
-//        Service service = context.getBean(Service.class);
-//
-//        /*displaying the bean of the service*/
-//        System.out.println("The bean of the service is: " + service.getName());
-//
-//        /*displaying the bean of the service for the vehicle*/
-//        System.out.println("The service bean for the vehicle is: " + vehicle.getService());
+        /*getting the person bean to the array to see what is going on behind the scene on debugging*/
+
+
+
+
     }
 
 }

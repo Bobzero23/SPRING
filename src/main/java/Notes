@@ -1,3 +1,5 @@
+YOU CAN NOT CREATE A BEAN USING AN INTERFACE ONLY CLASSES.
+
 BEANS WITH XML
 1. I had to create xml file manually myself while learning how to create beans using xml file
 2. In this section we created the connection with the bean using xml so better check the xml file in resources
