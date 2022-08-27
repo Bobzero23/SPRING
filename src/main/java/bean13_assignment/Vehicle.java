@@ -5,23 +5,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "vehicleBean")
 /*pojo class for vehicle*/
 public class Vehicle {
 
     /*creating a field for vehicle and service*/
-    private String name;
-    private Service service;
+    private String name = "Ferrari";
+    private final Service service;
 
     /*constructor*/
-//    @Autowired
-//    Vehicle(@Qualifier("service1") Service service){
-//        System.out.println("vehicle bean has been created");
-//        this.service = service;
-//    }
-
-    public Vehicle() {
-
+    @Autowired
+    public Vehicle(Service service){
+        System.out.println("vehicle bean has been created");
+        this.service = service;
     }
 
     /*getter*/
@@ -32,6 +28,11 @@ public class Vehicle {
     /*setter*/
     public void setName(String name){
         this.name = name;
+    }
+
+    /*getter for the service*/
+    public Service getService() {
+        return service;
     }
 
     @Override

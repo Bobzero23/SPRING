@@ -2,10 +2,9 @@ package bean12_autowired_qualifier;
 
 /*imports*/
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "personBean")
 /*pojo class for person*/
 public class Person {
 
@@ -17,8 +16,8 @@ public class Person {
 
     @Autowired
     /*constructor*/
-    Person(@Qualifier("vehicle1") Vehicle vehicle){
-        System.out.println("Person been is created");
+    public Person(Vehicle vehicle){
+        System.out.println("Person bean has been created");
         this.vehicle = vehicle;
     }
 
