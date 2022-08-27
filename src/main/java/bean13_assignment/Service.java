@@ -1,14 +1,36 @@
 package bean13_assignment;
 
 /*imports*/
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
 /*pojo class for service*/
 public class Service {
 
-    /*creating field*/
+    /*creating fields for service, speakers and tyres*/
     private String name = "Super Service";
+    private Tyres tyres;
+    private Speakers speakers;
+
+    @Autowired
+    /*constructor*/
+    public Service(Speakers speakers, Tyres tyres){
+        this.speakers = speakers;
+        this.tyres = tyres;
+    }
+
+    /*method for the speaker to play music*/
+    public void playMusic(){
+        String music = speakers.makeSound();
+        System.out.println(music);
+    }
+
+    /*method for the tyres to rotate*/
+    public void moveTyres(){
+        String status = tyres.rotate();
+        System.out.println(status);
+    }
 
     /*getter for service*/
     public String getName() {
