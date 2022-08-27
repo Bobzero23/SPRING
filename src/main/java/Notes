@@ -22,3 +22,9 @@ AUTO WIRING DEEP DIVING
 QUALIFIER ANNOTATION
 1. We use this annotation when we use @autowired annotation and when we want to get a bean using their name so
    we use this annotation to pass the name.
+
+CIRCULAR DEPENDENCY
+1. This happens when a programmer create two @autowired annotation in both two pojo class in that case the Spring
+   will not know which bean should be first created and both bean will wait for other bean to be created, and
+   such a scenario will display a UnsatisfiedDependencyException, and hey there is no solution for it you gonna
+   have to avoid this thing from the beginning hhhh.
