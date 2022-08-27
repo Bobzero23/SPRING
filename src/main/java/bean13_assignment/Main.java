@@ -15,10 +15,9 @@ public class Main {
         /*getting the bean of the person*/
         Person person = context.getBean(Person.class);
 
-        /*displaying the bean of the person*/
-        System.out.println("The bean of the person is: " + person.getName());
+        /*Now using the car according to our desire*/
+        person.getVehicle().getService().playMusic();
 
-        /*getting the person bean to the array to see what is going on behind the scene on debugging*/
 
 
 

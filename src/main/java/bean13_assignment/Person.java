@@ -2,7 +2,6 @@ package bean13_assignment;
 
 /*imports*/
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,8 +15,7 @@ public class Person {
     /*I am using @autowired on constructor,*/
     /*and also I am using qualifier here just in case*/
     @Autowired
-    Person(@Qualifier("vehicle2")Vehicle vehicle){
-        System.out.println("Bean of person has bean created");
+    Person(Vehicle vehicle){
         this.vehicle = vehicle;
     }
 

@@ -1,5 +1,9 @@
 package bean13_assignment;
 
+/*imports*/
+import org.springframework.stereotype.Component;
+
+@Component
 /*pojo class for Bose speakers to implement speakers*/
 public class BoseSpeakers implements Speakers{
     @Override

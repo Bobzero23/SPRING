@@ -16,7 +16,6 @@ public class Vehicle {
     /*constructor*/
     @Autowired
     public Vehicle(Service service){
-        System.out.println("vehicle bean has been created");
         this.service = service;
     }
 
