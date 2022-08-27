@@ -18,6 +18,9 @@ public class Main {
         /*getting the bean of the vehicle in the IoC*/
         Vehicle vehicle = context.getBean("vehicle3", Vehicle.class);
 
+        /*displaying the bean of the vehicle3*/
+        System.out.println("The bean of the vehicle3 is: " + vehicle.getName());
+
         /*displaying the bean of the person*/
         System.out.println("The person bean is: " + person.getName());
 

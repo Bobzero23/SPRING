@@ -30,4 +30,20 @@ public class ProjConfig {
         veh.setName("Lamborghini");
         return veh;
     }
+
+    /***************CREATING BEANS FOR SERVICE****************/
+
+    @Bean
+    Service service1 (){
+        var ser = new Service();
+        ser.setName("This is service one");
+        return ser;
+    }
+
+    @Bean
+    Service service2(){
+        var ser = new Service();
+        ser.setName("This is service two");
+        return  ser;
+    }
 }

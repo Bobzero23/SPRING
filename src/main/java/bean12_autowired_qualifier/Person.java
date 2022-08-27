@@ -18,7 +18,7 @@ public class Person {
     @Autowired
     /*constructor*/
     Person(@Qualifier("vehicle1") Vehicle vehicle){
-        System.out.println("Person bean is created");
+        System.out.println("Person been is created");
         this.vehicle = vehicle;
     }
 

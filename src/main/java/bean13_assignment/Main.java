@@ -23,6 +23,15 @@ public class Main {
 
         /*displaying the bean of vehicle3*/
         System.out.println("The bean of the vehicle3 is: " + vehicle.getName());
+
+        /*displaying the vehicle bean of the person*/
+        System.out.println("The vehicle bean of the person is: " + person.getVehicle());
+
+        /*getting the bean of the service*/
+        Service service = context.getBean("service1",Service.class);
+
+        /*displaying the bean of the service*/
+        System.out.println("The bean of the service is: " + service.getName());
     }
 
 }
