@@ -30,3 +30,14 @@ CIRCULAR DEPENDENCY
    will not know which bean should be first created and both bean will wait for other bean to be created, and
    such a scenario will display a UnsatisfiedDependencyException, and hey there is no solution for it you gonna
    have to avoid this thing from the beginning hhhh.
+
+5 TYPES OF SCOPE IN BEAN
+1. Singleton -> Default Scope in Spring
+2. Prototype
+3. Request
+4. Session
+5. Application
+
+RACE CONDITION
+This happens when two threads trying to reach the same shared variable
+
