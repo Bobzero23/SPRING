@@ -31,7 +31,7 @@ CIRCULAR DEPENDENCY
    such a scenario will display a UnsatisfiedDependencyException, and hey there is no solution for it you gonna
    have to avoid this thing from the beginning hhhh.
 
-5 TYPES OF SCOPE IN BEAN
+5 TYPES OF SCOPE IN BEAN -> @Scope(BeanDefinition.SCOPE_PROTOTYPE)
 1. Singleton -> Default Scope in Spring also commonly used
 2. Prototype
 3. Request
@@ -51,3 +51,27 @@ This concept is only valid in SINGLETON
 
 PROTOTYPE BEAN SCOPE
 This one creates a new object everytime a bean is called or created
+
+Note: Do not create a bean on Pojo class if they only have getters and setters, the shall have business logic at least.
+
+AOP (ASPECT ORIENTED PROGRAMMING)?
+
+ADD LIBRARIES TO USE THE AOP
+
+AOP JARGONS
+1. WHAT -> Aspect -> what code or logic we want to execute
+2. WHEN  -> Advice -> when we want to execute ti
+3. WHICH -> Pointcut -> which method we wanna use with it
+Point cut -> method call
+Target object -> the bean class
+
+Type of advices in Spring AOP
+@Before -> runs before the actual java method invocation
+@AfterReturning -> runs after the program finish the execution successfully
+@AfterThrowing -> runs when something wrong happened like telling the user that something happened
+@After -> runs after but accordingly
+@Around -> Combination of @After and @Before
+
+TO WORK WITH AOP YOU MUST USE @Enable.. annotation on the project configuration class to enable the features
+
+
