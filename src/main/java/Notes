@@ -32,12 +32,22 @@ CIRCULAR DEPENDENCY
    have to avoid this thing from the beginning hhhh.
 
 5 TYPES OF SCOPE IN BEAN
-1. Singleton -> Default Scope in Spring
+1. Singleton -> Default Scope in Spring also commonly used
 2. Prototype
 3. Request
 4. Session
 5. Application
 
+SINGLETON BEAN SCOPE
+1. This one creates only one a object for all application, even you create another object that object will refer to this
+
 RACE CONDITION
 This happens when two threads trying to reach the same shared variable
 
+EAGER AND LAZY INITIALIZATION
+This concept is only valid in SINGLETON
+1. Eager is when you run the Spring program all the beans are being created first before everything else
+2. Lazy is when the bean is being created at the time you want to use a particular bean
+
+PROTOTYPE BEAN SCOPE
+This one creates a new object everytime a bean is called or created
