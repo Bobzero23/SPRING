@@ -12,6 +12,7 @@ public class Service {
     private String name = "Super Service";
     private Tyres tyres;
     private Speakers speakers;
+    private Song song;
 
     @Autowired
     /*constructor*/
@@ -22,7 +23,7 @@ public class Service {
 
     /*method for the speaker to play music*/
     public void playMusic(){
-        String music = speakers.makeSound();
+        String music = speakers.makeSound(song);
         System.out.println(music);
     }
 

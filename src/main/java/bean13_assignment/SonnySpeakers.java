@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /*pojo class for Sonny speakers to implement speakers*/
 public class SonnySpeakers implements Speakers{
     @Override
-    public String makeSound() {
+    public String makeSound(Song song) {
         return "We got Sonny on the track..";
     }
 }

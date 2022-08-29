@@ -1,6 +1,7 @@
 package aop_configuring_around;
 
 /*imports*/
+import bean13_assignment.Song;
 import bean13_assignment.Speakers;
 import bean13_assignment.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
