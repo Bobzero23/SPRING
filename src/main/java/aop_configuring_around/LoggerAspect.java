@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 /*bean class*/
 public class LoggerAspect {
 
-    /*creating the logger object with getLogger method*/
+    /*initializing the logger object with getLogger method*/
     private Logger logger = Logger.getLogger(LoggerAspect.class.getName());
 
     /*this is one of the AOP advices, but I really don't know what I wrote inside it hhhh*/
