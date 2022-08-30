@@ -1,5 +1,6 @@
 package aop_configuring_around;
 
+/*imports*/
 import bean13_assignment.Service;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -15,8 +16,8 @@ public class Main {
         /*getting the proxy bean of the service class*/
         var service = context.getBean(Service.class);
 
-        /*displaying the proxy bean of the service class*/
-        System.out.println("The proxy bean of the service class is : " + service.getName());
+        /*displaying the data type of the VehicleService class*/
+        System.out.println("The data type of the VehicleService class is : " + service.getName());
 
 
     }

@@ -54,9 +54,13 @@ This one creates a new object everytime a bean is called or created
 
 Note: Do not create a bean on Pojo class if they only have getters and setters, the shall have business logic at least.
 
-AOP (ASPECT ORIENTED PROGRAMMING)?
+AOP (ASPECT ORIENTED PROGRAMMING) -> the point is to to move all the non-functional to one class which we can call it
+    aspects so that it will be easier to maintain.. We can normally do this
 
-ADD LIBRARIES TO USE THE AOP
+ASPECT
+1. A piece of code you want to execute when you call your business logic methods
+
+ADD LIBRARIES TO USE THE AOP -> dependency
 
 AOP JARGONS
 1. WHAT -> Aspect -> what code or logic we want to execute

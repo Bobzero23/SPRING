@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 public class Service {
 
     /*creating fields for service, speakers and tyres*/
-    private String name = "Super Service";
+    private String name = "Super VehicleService";
     private Tyres tyres;
     private Speakers speakers;
     private Song song;

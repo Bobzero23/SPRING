@@ -7,14 +7,15 @@ import bean13_assignment.Tyres;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+/*imports*/
 import java.util.logging.Logger;
 
 @Component
 /*pojo bean class for vehicle*/
-public class Vehicle {
+public class VehicleService {
 
     /*initialing object of the Logger with get logger method*/
-    private Logger logger = Logger.getLogger(Vehicle.class.getName());
+    private Logger logger = Logger.getLogger(VehicleService.class.getName());
 
     @Autowired
     private Speakers speakers;
