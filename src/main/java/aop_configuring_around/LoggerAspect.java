@@ -28,13 +28,11 @@ public class LoggerAspect {
         /*from here these are the before requirements*/
         logger.info(joinPoint.getSignature().toString() + " method execution start");
         Instant start = Instant.now();
-        /*here we are telling the spring that we are done, so it proceed wit the after requirements*/
+        /*here we are telling the spring that we are done, so it proceed with the after requirements*/
         joinPoint.proceed();
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start,finish).toMillis();
         logger.info("Time took to execute method is: " + timeElapsed);
         logger.info(joinPoint.getSignature().toString() + " method execution end");
     }
-
-
 }

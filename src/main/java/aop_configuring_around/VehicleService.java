@@ -55,5 +55,4 @@ public class VehicleService {
     public void setTyres(Tyres tyres){
         this.tyres = tyres;
     }
-
 }

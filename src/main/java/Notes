@@ -89,4 +89,7 @@ Type of advices in Spring AOP
 
 TO WORK WITH AOP YOU MUST USE @Enable.. annotation on the project configuration class to enable the features
 
+WEB APPLICATIONS
 
+SERVLET CONTAINER
+Takes the http protocol messages and convert to servlet object related request
