@@ -56,6 +56,4 @@ public class VehicleService {
         this.tyres = tyres;
     }
 
-
-
 }

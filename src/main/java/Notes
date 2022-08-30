@@ -69,6 +69,17 @@ AOP JARGONS
 Point cut -> method call
 Target object -> the bean class
 
+WEAVING INSIDE AOP
+When we implement AOP inside our app, Spring intercept each method according to the logic in our Aspect. Instead of
+giving the reference of a method it gives a proxy object that will manage each call.
+
+CONFIGURING ADVICES INSIDE AOP
+1. We can use the AspectJ pointcut to tell the spring which methods need to be intercepted
+2. We need to enable the Aspect Proxy on our configuration class
+3. Creating a bean class which will also be the Aspect class fot the logger
+4. Inside the Aspect Class we create a method which will have aspect logic
+5. To tell spring which method to intercept we use aspect advices such as @Around @Before and configuring it.
+
 Type of advices in Spring AOP
 @Before -> runs before the actual java method invocation
 @AfterReturning -> runs after the program finish the execution successfully
