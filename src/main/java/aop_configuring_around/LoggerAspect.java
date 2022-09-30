@@ -21,7 +21,7 @@ public class LoggerAspect {
     private Logger logger = Logger.getLogger(LoggerAspect.class.getName());
 
     /*this is one of the AOP advices, but I really don't know what I wrote inside it hhhh*/
-    @Around("execution(* aop_configuring_around.*.*(..))")
+    @Around("execution(* aop_configuring_around.*.*(..)) || execution(* bean13_assignment.*.*(..))")
     /*creating a method because we want to move all the logger to this Aspect class*/
     /*this method is used to control the flow of actual method invocation*/
     public void log(ProceedingJoinPoint joinPoint) throws Throwable{

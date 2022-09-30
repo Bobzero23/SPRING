@@ -19,6 +19,7 @@ public class ProjConfig {
     String hello(){
         return "Hello world";
     }
+
     @Bean
     Integer number(){
         return 23;

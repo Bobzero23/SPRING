@@ -14,7 +14,7 @@ public class Main {
         var context = new AnnotationConfigApplicationContext(ProjConfig.class);
 
         /*getting the bean the wrong because there multiple beans with the same name*/
-        /*We have to create the object of teh Vehicle class because that is the class where the method type came from*/
+        /*We have to create the object of the Vehicle class because that is the class where the method type came from*/
         //Vehicle veh = context.getBean(Vehicle.class);
 
         /*getting the bean the right way because now we are passing two parameters*/
