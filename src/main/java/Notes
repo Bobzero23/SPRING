@@ -1,4 +1,4 @@
-YOU CAN NOT CREATE A BEAN USING AN INTERFACE ONLY CLASSES.
+YOU CAN NOT CREATE A BEAN USING AN INTERFACE, ONLY CLASSES.
 
 BEANS WITH XML
 1. I had to create xml file manually myself while learning how to create beans using xml file
@@ -8,7 +8,7 @@ BEANS WITH XML
 and there you pass the name of the xml file folder you created
 
 AUTOWIRED
-1. Can bu used on top of the setter, constructor or class fields
+1. Can be used on top of the setter, constructor or class fields
 2. This is an example of Dependency Injection (Dynamic)
 3. We initialized the component annotation on top of the pojo classes to make things easier
 4. This method is not recommended because you can't initialize a autowired field as final but still most
@@ -62,7 +62,7 @@ ASPECT
 
 ADD LIBRARIES TO USE THE AOP -> dependency
 
-AOP JARGONS
+AOP JARGON'S
 1. WHAT -> Aspect -> what code or logic we want to execute
 2. WHEN  -> Advice -> when we want to execute ti
 3. WHICH -> Pointcut -> which method we wanna use with it

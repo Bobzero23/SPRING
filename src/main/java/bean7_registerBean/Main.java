@@ -20,11 +20,11 @@ public class Main {
         Vehicle vehicle1 = new Vehicle();
         vehicle1.setName("Audi");
 
-        /*creating a Supplier object so we can display the object of the vehicle above*/
+        /*creating a Supplier object, so we can display the object of the vehicle above*/
         Supplier<Vehicle> AudiSupplier = () -> vehicle1;
 
-        /*creating a supplier object and put everything in it is body*/
-        /*we have to make the return type sine we write the code ourselves*/
+        /*creating a supplier object and put everything in its body*/
+        /*we have to make the return type since we write the code ourselves*/
         Supplier<Vehicle> BMWSupplier = () -> {
             Vehicle vehicle2 = new Vehicle();
             vehicle2.setName("BMW");
