@@ -16,7 +16,7 @@ public class ProjConfig {
     }
 
     @Bean
-    /*creating a Person bean and wiring to the Ferrari vehicle of Vehicle bean*/
+    /*creating a Person bean and wiring to the Bentley vehicle of Vehicle bean*/
     Person person(){
         Person person = new Person();
         person.setName("Bobzero");

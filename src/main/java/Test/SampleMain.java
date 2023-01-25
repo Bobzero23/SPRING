@@ -77,19 +77,5 @@ public class SampleMain {
             System.out.println("The BMW bean is created..");
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

@@ -1,3 +1,23 @@
+IOC(INVERSION OF CONTROL)
+Software Design Principle, instead of a programmer creating the objects the framework for them.
+
+LOOSE COUPLING
+It means each class and object is independent and the less classes have knowledge about other class the loose they are.
+
+BEAN
+A plain Java class which is maintained by Spring Framework.
+
+IoC CONTAINER
+It is the container responsible for life time of beans with the help of annotations we make or the xml configs and also
+injects the required dependencies.
+
+CONTEXT
+Memory location of the web application where all the bean's information and dependencies are being maintained.
+
+spEL(SPRING EXPRESSION LANGUAGE)
+The Strong expression language for querying and manipulating object graph at runtime like setting and getting
+property values.
+
 YOU CAN NOT CREATE A BEAN USING AN INTERFACE, ONLY CLASSES.
 
 BEANS WITH XML
@@ -52,7 +72,7 @@ This concept is only valid in SINGLETON
 PROTOTYPE BEAN SCOPE
 This one creates a new object everytime a bean is called or created
 
-Note: Do not create a bean on Pojo class if they only have getters and setters, the shall have business logic at least.
+Note: Do not create a bean on Pojo class if they only have getters and setters, they shall have business logic at least.
 
 AOP (ASPECT ORIENTED PROGRAMMING) -> the point is to to move all the non-functional to one class which we can call it
     aspects so that it will be easier to maintain.. We can normally do this
@@ -64,7 +84,7 @@ ADD LIBRARIES TO USE THE AOP -> dependency
 
 AOP JARGON'S
 1. WHAT -> Aspect -> what code or logic we want to execute
-2. WHEN  -> Advice -> when we want to execute ti
+2. WHEN  -> Advice -> when we want to execute it
 3. WHICH -> Pointcut -> which method we wanna use with it
 Point cut -> method call
 Target object -> the bean class
