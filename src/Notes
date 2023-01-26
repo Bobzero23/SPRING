@@ -1,3 +1,8 @@
+SET UP
++ Start a new Maven Project
++ Put the dependency of IoC Container of your choice (Context Application) you can find it in maven webpage
+Then you're ready to go.
+
 IOC(INVERSION OF CONTROL)
 Software Design Principle, instead of a programmer creating the objects the framework for them.
 
@@ -11,6 +16,10 @@ IoC CONTAINER
 It is the container responsible for life time of beans with the help of annotations we make or the xml configs and also
 injects the required dependencies.
 
+TYPES OF IoC CONTAINERS
++ Bean Factory
++ Context Application
+
 CONTEXT
 Memory location of the web application where all the bean's information and dependencies are being maintained.
 
@@ -18,7 +27,13 @@ spEL(SPRING EXPRESSION LANGUAGE)
 The Strong expression language for querying and manipulating object graph at runtime like setting and getting
 property values.
 
-YOU CAN NOT CREATE A BEAN USING AN INTERFACE, ONLY CLASSES.
+PROJECT CONFIG CLASS
+Is the class which has definitions of beans with the annotation of @Configuration
+
+** CHECK EXAMPLE1
+
++ BEAN NAMES ARE NORMALLY NOUN AND NOT VERBS
++ YOU CAN NOT CREATE A BEAN USING AN INTERFACE, ONLY CLASSES.
 
 BEANS WITH XML
 1. I had to create xml file manually myself while learning how to create beans using xml file

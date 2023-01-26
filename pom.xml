@@ -9,8 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>untitled1</module>
-        <module>Spring1</module>
+
+        <module>Example1</module>
     </modules>
 
     <properties>
