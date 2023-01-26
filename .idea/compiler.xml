@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Example1" />
+        <module name="Example1_BeansCreation" />
+        <module name="Example2_NoUniqueBeansException" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="1_Beans_creation" target="18" />
       <module name="demo" target="17" />
       <module name="Deneme" target="18" />
       <module name="Example2" target="18" />

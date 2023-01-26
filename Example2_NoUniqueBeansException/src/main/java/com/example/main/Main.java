@@ -13,7 +13,7 @@ public class Main {
 
         /**Using Spring Beans*/
         var context = new AnnotationConfigApplicationContext(ProjConfig.class);
-        Vehicle veh = context.getBean(Vehicle.class);
+        Vehicle veh = context.getBean("vehicle1", Vehicle.class);
         System.out.println("The bean of the IoC Container is: " + veh.getName());
 
         String hello = context.getBean(String.class);

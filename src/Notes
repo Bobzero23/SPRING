@@ -32,6 +32,10 @@ Is the class which has definitions of beans with the annotation of @Configuratio
 
 ** CHECK EXAMPLE1
 
+NO UNIQUE BEAN DEFINITION EXCEPTION
+1 This happens when you have call the method get bean from the data type which has multiple beans and without specifying
+  which bean exactly you want and to avoid it, you can pass two parameter to the get bean method to specify the bean name
+
 + BEAN NAMES ARE NORMALLY NOUN AND NOT VERBS
 + YOU CAN NOT CREATE A BEAN USING AN INTERFACE, ONLY CLASSES.
 
