@@ -16,6 +16,7 @@
         <module>Example4_PrimaryAnnotation</module>
         <module>Example5_ComponentAnnotation</module>
         <module>Example6_PostConsturctAnnotation</module>
+        <module>Example7_PreDestoroyAnnotation</module>
     </modules>
 
     <properties>

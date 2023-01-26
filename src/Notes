@@ -56,6 +56,11 @@ STEREOTYPE ANNOTATION
 We use this above the method to gain the control when we use the @Component above the class and inside the method with
 @PostConstruct Annotation we use the keyword this which we refer to the bean which is going to be created.
 
+@PreDestroy ANNOTATION
+We use this above the method which will work right after the bean is destroyed and sometimes when we are working with
+database, nowadays Spring takes care of everything but most of the times we use it when there is context.close() and
+it is also used when there are some cleaning which must be done before clearing the bean.
+
 BEANS WITH XML
 1. I had to create xml file manually myself while learning how to create beans using xml file
 2. In this section we created the connection with the bean using xml so better check the xml file in resources

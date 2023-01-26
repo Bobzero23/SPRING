@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Example5_ComponentAnnotation" />
+        <module name="Example2_NoUniqueBeansException" />
         <module name="Example6_PostConsturctAnnotation" />
         <module name="Example1_BeansCreation" />
         <module name="Example4_PrimaryAnnotation" />
-        <module name="Example5_ComponentAnnotation" />
+        <module name="Example7_PreDestoroyAnnotation" />
         <module name="Example3_CostumizedBeanName" />
-        <module name="Example2_NoUniqueBeansException" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
