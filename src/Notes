@@ -46,6 +46,16 @@ will have to put the @ComponentScan(basePackages = "NameOfThePackageWhichHasTheC
 + BEAN NAMES ARE NORMALLY NOUN AND NOT VERBS
 + YOU CAN NOT CREATE A BEAN USING AN INTERFACE, ONLY CLASSES.
 
+STEREOTYPE ANNOTATION
++ @Component -> It is the base for other annotation
++ @Service -> In this class we put Business logics and we can make external API's
++ @Repository -> Classes for the database
++ @Controller -> Used in Spring MVC to redirect the html page
+
+@PostConstruct ANNOTATION
+We use this above the method to gain the control when we use the @Component above the class and inside the method with
+@PostConstruct Annotation we use the keyword this which we refer to the bean which is going to be created.
+
 BEANS WITH XML
 1. I had to create xml file manually myself while learning how to create beans using xml file
 2. In this section we created the connection with the bean using xml so better check the xml file in resources

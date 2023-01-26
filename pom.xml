@@ -15,6 +15,7 @@
         <module>Example3_CostumizedBeanName</module>
         <module>Example4_PrimaryAnnotation</module>
         <module>Example5_ComponentAnnotation</module>
+        <module>Example6_PostConsturctAnnotation</module>
     </modules>
 
     <properties>
