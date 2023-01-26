@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Example8_CreatingBeansConditionally" />
         <module name="Example5_ComponentAnnotation" />
         <module name="Example2_NoUniqueBeansException" />
         <module name="Example6_PostConsturctAnnotation" />

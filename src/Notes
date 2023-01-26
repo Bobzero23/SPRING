@@ -61,6 +61,9 @@ We use this above the method which will work right after the bean is destroyed a
 database, nowadays Spring takes care of everything but most of the times we use it when there is context.close() and
 it is also used when there are some cleaning which must be done before clearing the bean.
 
+RegisterBean()
+Helps us to create bean according to the given condition
+
 BEANS WITH XML
 1. I had to create xml file manually myself while learning how to create beans using xml file
 2. In this section we created the connection with the bean using xml so better check the xml file in resources
