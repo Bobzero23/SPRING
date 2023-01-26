@@ -12,6 +12,7 @@
 
 
         <module>Example2_NoUniqueBeansException</module>
+        <module>Example3_CostumizedBeanName</module>
     </modules>
 
     <properties>
