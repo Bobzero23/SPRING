@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Example1_BeansCreation" />
         <module name="Example4_PrimaryAnnotation" />
+        <module name="Example5_ComponentAnnotation" />
         <module name="Example3_CostumizedBeanName" />
         <module name="Example2_NoUniqueBeansException" />
       </profile>
