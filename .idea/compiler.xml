@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Example1" />
+        <module name="Exmaple10_Wiring" />
         <module name="Example8_CreatingBeansConditionally" />
         <module name="Example9_CreatingBeanWithXml" />
         <module name="Example5_ComponentAnnotation" />
+        <module name="Example11_WiringUsingMethodParameter" />
         <module name="Example2_NoUniqueBeansException" />
         <module name="Example6_PostConsturctAnnotation" />
         <module name="Example1_BeansCreation" />

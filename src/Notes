@@ -70,6 +70,9 @@ BEANS WITH XML
 3. In the main method we have to use another way of creating object of IoC Container go check it
 and there you pass the name of the xml file folder you created
 
+DI (DEPENDENCY INJECTION)
+Is Like making the framework knows that a particular something is belonging or depending to a particular person.
+
 AUTOWIRED
 1. Can be used on top of the setter, constructor or class fields
 2. This is an example of Dependency Injection (Dynamic)
