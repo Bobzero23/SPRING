@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Exmaple10_Wiring" />
         <module name="Example12_AutowiredAnnotation" />
+        <module name="Example13_AutowiredOnSetter" />
         <module name="Example8_CreatingBeansConditionally" />
         <module name="Example9_CreatingBeanWithXml" />
         <module name="Example1_BeansCreation" />
