@@ -18,6 +18,7 @@
         <module>Example6_PostConsturctAnnotation</module>
         <module>Example7_PreDestoroyAnnotation</module>
         <module>Example8_CreatingBeansConditionally</module>
+        <module>Example9_CreatingBeanWithXml</module>
     </modules>
 
     <properties>
