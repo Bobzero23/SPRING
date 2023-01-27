@@ -1,7 +1,7 @@
-package com.exmple.main;
+package com.example.main;
 
-import com.exmple.beans.Person;
-import com.exmple.config.ProjConfig;
+import com.example.beans.Person;
+import com.example.config.ProjConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {

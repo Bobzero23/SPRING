@@ -1,7 +1,7 @@
-package com.exmple.config;
+package com.example.config;
 
-import com.exmple.beans.Person;
-import com.exmple.beans.Vehicle;
+import com.example.beans.Person;
+import com.example.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -16,10 +16,10 @@ public class ProjConfig {
     }
 
     @Bean
-    Person person() {
+    Person person(Vehicle vehicle) {
         Person person = new Person();
         person.setName("Bob");
-        person.setVehicle(vehicle()); // wiring
+        person.setVehicle(vehicle);
         return person;
     }
 }

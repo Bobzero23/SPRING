@@ -1,7 +1,7 @@
-package com.exmple.config;
+package com.example.config;
 
-import com.exmple.beans.Person;
-import com.exmple.beans.Vehicle;
+import com.example.beans.Person;
+import com.example.beans.Vehicle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

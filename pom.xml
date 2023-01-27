@@ -20,7 +20,8 @@
         <module>Example8_CreatingBeansConditionally</module>
         <module>Example9_CreatingBeanWithXml</module>
         <module>Example10_WiringUsingMethodCall</module>
-        <module>Exmaple10_Wiring/Example11_WiringUsingMethodParameter</module>
+        <module>Example11_WiringUsingMethodParameter</module>
+        <module>Example12_AutowiredAnnotation</module>
     </modules>
 
     <properties>

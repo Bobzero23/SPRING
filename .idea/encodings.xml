@@ -3,6 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../Deneme/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Deneme/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example10_WiringUsingMethodCall/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example10_WiringUsingMethodCall/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example11_WiringUsingMethodParameter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example11_WiringUsingMethodParameter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example12_AutowiredAnnotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example12_AutowiredAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example1_BeansCreation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example1_BeansCreation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example2/src/main/java" charset="UTF-8" />
@@ -23,10 +29,6 @@
     <file url="file://$PROJECT_DIR$/Example8_CreatingBeansConditionally/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example9_CreatingBeanWithXml/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example9_CreatingBeanWithXml/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Exmaple10_Wiring/Example11_WiringUsingMethodParameter/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Exmaple10_Wiring/Example11_WiringUsingMethodParameter/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Exmaple10_Wiring/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Exmaple10_Wiring/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
