@@ -25,6 +25,7 @@
         <module>Example13_AutowiredOnSetter</module>
         <module>Example14_AutowiredOnConstructor</module>
         <module>Example15_QualifierAnnotation</module>
+        <module>Example16_Assignment</module>
     </modules>
 
     <properties>

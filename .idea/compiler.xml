@@ -22,6 +22,7 @@
         <module name="Example3_CostumizedBeanName" />
         <module name="Example14_AutowiredOnConstructor" />
         <module name="Example15_QualifierAnnotation" />
+        <module name="Example16_Assignment" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
