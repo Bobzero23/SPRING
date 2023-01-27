@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/Example1_BeansCreation/pom.xml" />
         <option value="$PROJECT_DIR$/Example11_WiringUsingMethodParameter/pom.xml" />
         <option value="$PROJECT_DIR$/Example3_CostumizedBeanName/pom.xml" />
+        <option value="$PROJECT_DIR$/Example13_AutowiredOnSetter/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

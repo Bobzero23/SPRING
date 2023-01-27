@@ -22,7 +22,8 @@
         <module>Example10_WiringUsingMethodCall</module>
         <module>Example11_WiringUsingMethodParameter</module>
         <module>Example12_AutowiredAnnotation</module>
-        <module>Example12_AutowiredAnnotation/Example13_AutowiredOnSetter</module>
+        <module>Example13_AutowiredOnSetter</module>
+        <module>Example14_AutowiredOnConstructor</module>
     </modules>
 
     <properties>

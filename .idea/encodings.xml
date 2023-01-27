@@ -11,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/Example12_AutowiredAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example13_AutowiredOnSetter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example13_AutowiredOnSetter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example14_AutowiredOnConstructor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example14_AutowiredOnConstructor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example1_BeansCreation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example1_BeansCreation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example2/src/main/java" charset="UTF-8" />
