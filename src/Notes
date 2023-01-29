@@ -169,6 +169,16 @@ and we must first inject the libraries of AOP in our Pom.xml file
 + Component
 + Advice annotation
 
+* Since we all know that @Around annotation is the combination of @Before and @After so that we we are writing our
+  aspect logic in our join point we have to use the jointPoint.Proceed() method to tell the spring that we are done
+  with our before logic so it can proceed with the target class and the it will do the after logic
+
+* I think that the targeted class shall only have to initiate the Logger object to be ready to go.
+
+* I used accepted ProceedingJoinPoint as a input parameter because when we use around there will be before and after
+
+* If we have more than one aspect we can use order() and pass the number to tell Spring which aspect to start with
+
 WEB APPLICATIONS
 
 SERVLET CONTAINER

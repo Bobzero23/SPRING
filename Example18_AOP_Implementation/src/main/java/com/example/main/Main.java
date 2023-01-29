@@ -1,8 +1,8 @@
 package com.example.main;
 
-import com.solution.configs.ProjConfig;
+import com.example.services.VehicleService;
+import com.example.configs.ProjConfig;
 import com.solution.model.Song;
-import com.solution.services.VehicleService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -16,7 +16,6 @@ public class Main {
         boolean vehicleStarted = true;
         String moveVehicleStatus = vehicleService.moveVehicle(vehicleStarted);
         String playMusicStatus = vehicleService.playMusic(vehicleStarted, song);
-        System.out.println(playMusicStatus);
         String applyBreakStatus = vehicleService.applyBrake(vehicleStarted);
     }
 }
