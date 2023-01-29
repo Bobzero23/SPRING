@@ -56,7 +56,8 @@ public class VehicleService {
         Instant finish = Instant.now();
         long timeElapsed = Duration.between(start, finish).toMillis();
         logger.info("Time took to execute the method : "+timeElapsed);*/
-        return tyres.rotate();
+        throw new NullPointerException("For the testing purpose...");
+//        return tyres.rotate();
     }
 
 

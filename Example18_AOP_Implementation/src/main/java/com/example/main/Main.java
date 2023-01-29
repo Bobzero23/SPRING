@@ -15,7 +15,7 @@ public class Main {
         song.setSingerName("Tylor Swift");
         boolean vehicleStarted = true;
         String moveVehicleStatus = vehicleService.moveVehicle(vehicleStarted);
-        String playMusicStatus = vehicleService.playMusic(vehicleStarted, song);
-        String applyBreakStatus = vehicleService.applyBrake(vehicleStarted);
+        /*String playMusicStatus = vehicleService.playMusic(vehicleStarted, song);
+        String applyBreakStatus = vehicleService.applyBrake(vehicleStarted);*/
     }
 }
