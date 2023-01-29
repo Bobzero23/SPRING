@@ -11,7 +11,9 @@
         <module name="Example13_AutowiredOnSetter" />
         <module name="Example8_CreatingBeansConditionally" />
         <module name="Example9_CreatingBeanWithXml" />
+        <module name="Example18_AOP_Implementation" />
         <module name="Example1_BeansCreation" />
+        <module name="Example17_AOP" />
         <module name="Example7_PreDestoroyAnnotation" />
         <module name="Example1" />
         <module name="Example5_ComponentAnnotation" />

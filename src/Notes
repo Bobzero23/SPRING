@@ -123,6 +123,10 @@ Note: Do not create a bean on Pojo class if they only have getters and setters, 
 AOP (ASPECT ORIENTED PROGRAMMING) -> the point is to to move all the non-functional to one class which we can call it
     aspects so that it will be easier to maintain.. We can normally do this
 
++ WE SHOULDN'T CREATE BEANS FOR THE JAVA CLASSES WHICH ONLY HAVE GETTERS AND SETTER UNLESS THEY HAVE BUSINESS LOGIC,
+  WE SHOULD PUT THIS TYPE OF CLASSES IN MODEL PACKAGE
+
+
 ASPECT
 1. A piece of code you want to execute when you call your business logic methods
 
@@ -135,14 +139,18 @@ AOP JARGON'S
 Point cut -> method call
 Target object -> the bean class
 
+TYPICAL SCENARIO OF AOP IMPLEMENTATION
+A developer wants some logic(Aspect) to be executed before(Advice) each execution(JoinPoint) of method
+playMusic()(PointCut) present inside the bean VehicleServices(TargetObject)
+
 WEAVING INSIDE AOP
-When we implement AOP inside our app, Spring intercept each method according to the logic in our Aspect. Instead of
+When we implement AOP inside our app, Spring intercepts each method according to the logic in our Aspect. Instead of
 giving the reference of a method it gives a proxy object that will manage each call.
 
 CONFIGURING ADVICES INSIDE AOP
 1. We can use the AspectJ pointcut to tell the spring which methods need to be intercepted
 2. We need to enable the Aspect Proxy on our configuration class
-3. Creating a bean class which will also be the Aspect class fot the logger
+3. Creating a bean class which will also be the Aspect class for the logger
 4. Inside the Aspect Class we create a method which will have aspect logic
 5. To tell spring which method to intercept we use aspect advices such as @Around @Before and configuring it.
 
@@ -151,9 +159,15 @@ Type of advices in Spring AOP
 @AfterReturning -> runs after the program finish the execution successfully
 @AfterThrowing -> runs when something wrong happened like telling the user that something happened
 @After -> runs after but accordingly
-@Around -> Combination of @After and @Before
+@Around -> Combination of @After and @Before this one is very powerful
 
-TO WORK WITH AOP YOU MUST USE @Enable.. annotation on the project configuration class to enable the features
+TO WORK WITH AOP YOU MUST USE @EnableAspectJAutoProxy on the project configuration class to enable the features
+and we must first inject the libraries of AOP in our Pom.xml file
+
+* Aspect class shall have three annotations
++ Aspect
++ Component
++ Advice annotation
 
 WEB APPLICATIONS
 

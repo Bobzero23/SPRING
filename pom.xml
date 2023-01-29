@@ -26,6 +26,8 @@
         <module>Example14_AutowiredOnConstructor</module>
         <module>Example15_QualifierAnnotation</module>
         <module>Example16_Assignment</module>
+        <module>Example17_AOP</module>
+        <module>Example18_AOP_Implementation</module>
     </modules>
 
     <properties>
