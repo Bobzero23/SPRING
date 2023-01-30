@@ -314,6 +314,11 @@ TO AVOID CREATING CONTROLLERS EVERYTIME
 5. Inside that class you override a method called addViewControllers and that is
    how you are going to configure all the controllers just like that inside that method. For more info look at the code
 
+@RequestMapping and @PostMapping
+1. RequestMapping is like a generic annotation which accepts the method type as parameter if you mention it and if you not,
+   it will accept any kind as default but PostMapping you don't have to pass any parameter of a method type because itself is
+   self description
+
 QUICK TIP:
 sometimes the webpage doesn't reload automatically even after you used the devtools the thing is go to your LOCAL
 maven file and delete the files found inside the target file and that will resolve this issue
