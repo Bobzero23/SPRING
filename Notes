@@ -275,6 +275,11 @@ DISABLING CACHE IN THYMELEAF
 
 DOWNLOAD LIVERELOAD EXTENSION IN YOUR WEB BROWSER
 
+MVC PATTERN
+1. View -> html / JavaScript
+2. Controller -> Acts like a brain tells Spring which business Logic shall be execute
+3. Model ->
+
                                 MVC (MODEL VIEW CONTROLLER)
 1. The main objective is to achieve loose double coupling inside the web application we are building.
 
