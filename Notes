@@ -180,4 +180,358 @@ and we must first inject the libraries of AOP in our Pom.xml file
 
 * If we have more than one aspect we can use order() and pass the number to tell Spring which aspect to start with
 
-** THIS IS ALL FOR SPRING CORE, CONGRATULATIONS!! **
+******************* THIS IS ALL FOR SPRING CORE, CONGRATULATIONS!! ***************************************
+
+
+* Java actually only use objects but fronted request always uses http protocols so how does Java understands that,
+  that is where the servletContainer come to picture it changes the protocols to objects I guess, and before Spring
+  the developer had to create each servlet by himself. Spring has dispatcherServlet which deal with every request
+  coming from the client and we have to do a very minor work and the rest is on Spring.
+
+SPRING BOOT IMPORTANT FEATURES
++ SpringBoot Starters
++ SpringBoot AutoConfiguration
++ SpringBoot Actuators and DevTools
+
+CREATING A WEB APP
+1. Go to start.spring.io there will start creating spring boot skeleton
+
+RUNNING A WEB APP
+1. As we run a normal java class we need a class with a main. It is same to spring boot but the only difference is
+   you will have to put this annotation @SpringBootApplication and whenever you run SpringBoot app the Spring
+   Framework will look for this annotation and treat this class as a main class.
+
+HELL WORD WEB APP
+1. Start with creating the html file in the static folder and then write whatever you wanna see in the browser
+2. By default SpringBoot looks for static folders so you don't have to tell the location, but you have to tell Spring
+   which html file shall it redirect and do that by creating the controller class and write the java code..
+3. In that class mention the @Controller at the top of the class and create a method with a @RequestMapping
+   which will hold the url of the html to be provoked and that method shall return STRING then return the name
+   of the html file you want to provoke as a returning value.
+
+STATIC FOLDER IN RESOURCES
+There is where you put your CSS and JS OR IMAGES ETC.
+
+TEMPLATE FOLDER IN RESOURCES
+There is where you put your html folders if you are using thymeleaf
+
+TO INVOKE THE WEB
+1. We need a controller class which will tell the web that we invoking the web from a particular html.
+2. Inside that class we use the @Controller annotation
+3. Inside the controller class you need to write the method to tell that anyone who opens e.g /home should be redirected
+   to e.g home.html and for that we going to use the @RequestMapping("/home") annotation
+
+APPLICATION.PROPERTIES FOLDER
+1. Is where you should go if you wanna make any configuration about SpringBoot by yourself
+
+CHANGING THE SERVER PORT
+1. Go to application.properties folder and write -> server.port = 8081
+
+CHANGING THE CONTEXT PATH
+1. Go to application.properties folder and write -> server.servlet.context-path = /demonstration
+
+RANDOM PORT NUMBER
+1. Simple go to application.properties folder and write -> server.port = 0
+    this will tell the spring that the programmer wants to start the server in a random ports each time
+    it is helpful if you wanna run your web app in different instances
+
+LOCAL HOST 8080
+1. Using small configuration you can run your localhost without mentioning the /home, check the controller class
+    @RequestMapping(value = {"", "/", "home"})
+
+THYMELEAF
+1. Modern server side template engine which provides a way for a developer to work frontend and backend, and let
+   the developers to deploy their work on the single server
+2. By working with Spring MVC, Thymeleaf generates the html and dynamic content based on the template we want
+3. SpringResourceTemplateResolver is the one which converts the Thymeleaf code to html
+
+
+HOW TO USE THYMELEAF
+1. Create your html folder inside the template folder because thymeleaf is a template engine
+2. then you need to import the namespace of the thymeleaf inside of a html file in the html tag
+    after you do that your html will start using thymeleaf tags which start with th:
+3. After doing that we gonna pass the Model interface and its object on the particular html controller file
+    then we will be good to go
+4. After passing the Model interface as a parameter in the particular html method then you use the model.addAttribute
+    methods which accepts a variable and a value inside it and both are in quotes "".
+
+DISPLAYING DYNAMIC CONTENT
+1. We gonna be able to do this with the help of Thyme leaf by creating a html file inside the template and then
+   in the controller class we need to pass MODEL interface and its object as method input parameter, this Model
+   interface acts as a container while creating dynamic content using Thymeleaf
+2. Using Model interface object we can use a method modelAttribute() to pass whatever is coming from our http request
+
+DISABLING CACHE IN THYMELEAF
+1. The changes you are making in template folders wont be shown even after you do rebuild unless you restart the server
+2. This is why you wont have to restart the server everytime you make some change in you template you just build and
+   then you are good to go
+3. To do it go to the your properties.application and say spring.thymeleaf.cache = false
+4. For more information go check the application properties app there are more details
+   This is not for java codes so if you change java code you gonna have to restart the server
+
+                                SPRING BOOT DEVTOOLS
+This makes you just write java code and just build and you are good to go so inject the dependencies
+
+DOWNLOAD LIVERELOAD EXTENSION IN YOUR WEB BROWSER
+
+                                MVC (MODEL VIEW CONTROLLER)
+1. The main objective is to achieve loose double coupling inside the web application we are building.
+
+MVC ARCHITECTURE
+1.Client send a request in a http format
+2.The request goes to Servlet Container such as Tomcat, this convert the http request to the servlet request
+    and sending the request to the dispatcher servlet
+3.Dispatcher servlet only knows the path but it doesn't anything else like method or which controller and for
+    that it goes and ask handler mapping like which controller and which method shall be invoked and it will
+    finish the rest by visiting those controller and invoking the methods needed
+4. Then the controller will return the view which shall be displayed to the client as a response like view.html
+    but the dispatcher doesn't know about the views so it goes and ask View Resolver
+5. View resolver will finish the view job and all return the view to the servlet dispatcher and again it sends back
+    to the server and the server sends it back to the client
+
+                                       WEBSITE PROJECT
+1. Putting the HEADER and the FOOTER html code in different files
+   but you will import the files of those two files code on their places in the home.html file
+
+REDIRECTING A PARTICULAR LINK TO ANOTHER HTML PAGE USING THYMELEAF
+th:href="@{/home}"
+
+REDIRECTING A HTML FILE TO ANOTHER HTML FILE
+<div th:replace="header :: header"></div>
+
+             WEB CONFIG FILE
+TO AVOID CREATING CONTROLLERS EVERYTIME
+1. Create a package called webconfig
+2. Create a pojo class which is going to handle all he controllers inside it
+3. That class is going to implement the WebMvcConfigurer
+4. That class will also have the @Configuration annotation
+5. Inside that class you override a method called addViewControllers and that is
+   how you are going to configure all the controllers just like that inside that method. For more info look at the code
+
+QUICK TIP:
+sometimes the webpage doesn't reload automatically even after you used the devtools the thing is go to your LOCAL
+maven file and delete the files found inside the target file and that will resolve this issue
+
+GETTING THE MESSAGE FROM THE PAGE
+1. Go to the particular html file controller which you are working with and create another method and pass the map too.
+2. Create a method with value ModelAndView which takes @RequestParam for each value match in the html, please make sure
+   the values matches I mean from UI and in the code you are writing
+
+MODEL AND VIEW
+This object is used when you want to take an input from the user and to tell the user than you received the input by like
+maybe emptying the blanks or refreshing the page e.t.c ...
+
+SUBMITTING INFORMATION FROM A PAGE
+Sometimes submitting information might become hard if there a lot of info input to take from the page so for that
+there is a good approach for it by creating a package which will handle the models and there you create a pojo
+which taking all the values and create their getters and setters and also the toString method.
+
+NORMALLY INSIDE A PRODUCT WEB SERVICE YOU WILL BUILD YOUR LOGIC SUCH A WAY THAT INSIDE YOUR CONTROLLER LAYER YOU WILL DO
+ALL YOUR PRIMARY VALIDATION AND AFTER FINISHING THAT YOU WILL GIVE THE JOB TO SERVICE LAYER AND AFTER SERVICE LAYER IS DONE
+IT WILL SEND THE WORK TO THE PERSISTENCE LAYER AND TO MAKE ALL OF THESE WORK TOGETHER YOU GONNA HAVE TO DO THE AUTO WIRING
+INJECTION IN CONTACT CONTROLLER EXAMPLE IF YOU WANNA WORK WITH CONTACT SERVICE, AFTER YOU DO THE INJECTION THE OBJECT OF
+THE INJECTED CLASS WILL BE A BEAN WHICH WE CAN USE TO CALL ITS METHODS IN THE CERTAIN POJO
+
+HOW TO SEND A DATA FROM BACKEND TO FRONTEND
+1. We need a certain class which will define the structure of a particular html file, which we normally put in model package
+    inside this pojo class you can have the field and constructor etc. check the codes
+2. We need a controller class for mapping the structure here is where we do the wiring to and define our business logic
+
+LOMBOK
+This is a java library which provides some annotation to help a java programmer not to repeat some statements e.g getters
+and setter, this library do create all the getter and setters in the background when we use its annotation
+1.@Data is the common annotation which has all getters and setter and some more inside it.
+2.@Slf4j is the annotation we use for Log instead of creating a log object use this and use the log object directly.
+To start to use it, You gonna have to inject its dependencies
+
+QUERY PARAM
+1. This is mostly being used in the times of filtering the products like when you go to amazon searching for products and
+there you can filter the price like only high or whatever that the usage of the query param
+2. Between query param you use & sign to separate them and is a good practice to use to most three params
+3. We normally use the @RequestParam annotation to to accept the query or accept the form data tha we're going to receive
+5. We can also make the request param as MANDATORY or OPTIONAL, is like the user cant pass without filling the blank
+6. To use them go to the particular link e.g holidays in footer.html and thymeleaf provides us an easy way to do this
+7. After that you go the particular controller class and accepting the params
+Note: Adding your params to Model attribute will give you an advantage to be able to send them back to the user
+this are those links appear left bottom of the screen whenever hover around the cursor on the links in the website
+
+DISPLAYING THE COLUMN ACCORDINGLY
+Thymeleaf provides us the ability to make the html display according to the condition we put as we did in the
+holidays.html to the rows and columns for the festival holidays e.g th:if="${festival} == true" and that's it.
+In the method if you say that @RequestParam(Required = false ) you are making in optional
+
+PATH PARAM vs QUERY PARAM
+The primary difference between these two is, in QUERY param  the frontend application can send a request as URL
+
+PATH PARAM
+We use @PathVariable annotation to pass the name of the variable inside our method.
+Note: There is no default value inside path param.
+1. You need to catch the path of the variable by creating a variable inside your getting mapping in the controller file
+2. Pass the same variable with the same name using @PathVariable inside method input parameter
+3. After that you might want to write a logic to display the page accordingly because here is no boolean stuffs like
+    inside query param check the holiday controller method for more understanding
+Note: DO NOT FORGET TO MENTION THE '/' IN THE href LINKS IN THE SCRIPTS AND BOOTSTRAPS SO IT BECOME RECOGNIZABLE BY THE SPRING FRAMEWORK
+
+VALIDATIONS
+Actually this one is very important imagine you ask a user to enter a phone number and then they enter their name..
+
+CLIENT SIDE VALIDATIONS
+This is like you do the validations only in the client side like only in the html..
+Go to a certain html field which you want to be must filled field and put required = "true"
+Note: this kind of validation is not safe because someone can interact with your code in a browser and bypass it
+      so it is better to have both client side and server side validations
+
+VALIDATIONS WITH SPRING BOOT
+1. Inject the dependencies of the library such us Hibernate
+2. In each validation pojo class use @Valid annotation at the top
+Note: There are two libraries in Java which provides these validations, Javax and Hibernate.
+These validations we put in the Pojo classes in model package, check the contact Pojo class for more information
+Note: We need to let the contact.html know that there is a validation.
+
+LETTING HTML KNOW ABOUT THE VALIDATION
+1. Go to your particular controller Pojo class of the particular html class
+2. Find the method which displaying the html file and there add a Model object in input method parameter
+3. Use the model object to create a attribute and inside that attribute you need to send the object of contact
+    That way, you will tell the thymeleaf that any validations performs should be performed according to that Pojo class
+4. Go to the Contact.html and you need to build a relationship between the html file and and the Pojo class and for that,
+   find the form where the inputs are coming from and mention this th:object="${contact}"
+5. You also have to build a link between the field in a bean Contact class and the fields in the html file and for that,
+    find the field where you put names in your html file and do this, remove the name and id's and id and add the thymeleaf
+    like this  th:field="*{mobileNum}"
+Note: Now whenever a user submitting a change in the html file action will perform, which goes to savaMessage method inside
+      the contactController class there we need to make some changes inside the method input parameter
+6. add the @Valid and @ModelAttribute("contact") to method input parameter before the Contact object which is inside the
+    method input parameter, after the contact object put a coma and add Errors object so if there is any error identified
+    our spring frame work will send the error to us and to the client maybe to the client only I don't remember.
+Note: Here you have a big chance to make a mess this is kinda messy work because after you declare the errors object
+        in the method input you might wanna make changes inside the method to get the errors which you gonna have to use
+        log with some if statements and for that also you method needs to return String type because you are getting errors
+        from the log and this is what you must do
+7. Write an if statement to check if there is any errors, which if there is, you will catch them with a log object
+8. Write a log to get the errors inside the if statement
+9. Change the method return type to String
+10. Return the html page as a String inside the if statement to display the errors to the client
+11. Also redirect with String only not with Model type... this will redirect the new html page if there is no errors
+Note: Check the ContactController for more understanding
+13. And you should go to the Contact html file to display the errors which you are getting from the backend
+    past this on top of the form
+        <ul>
+                            <li class="alert alert-danger" role="alert"
+                                th:each="error : ${#fields.errors('contact.*')}" th:text="${error}" />
+        </ul>
+Note: you also can build your own validations
+
+
+                                               SPRING WEB SCOPES
+SCOPES
+When a bean is created with these scopes
+1. @RequestScope -> every application you do in the web will result as an HTTP request
+2. @SessionScope -> every application you do in the web will create instance of the Session until the session in invalidated
+    like when the user cleaning the cache
+3. @ApplicationScope -> will create a single unique bean for your entire application, each user will get the same instance
+
+USE CASES OF SCOPES
+
+Note: Don't create large logic inside your constructor
+
+@Request
+1. Life time is very short
+2. Takes a lot of memory
+3. A lot of garbage collections happening
+4. Use it to only sensitive
+Note: So don't use it when you need it..
+
+@Session
+1. Not commonly created
+2. Have long life
+3. Good to store information and use the same information according to the that information along the whole page
+Note: Don't store many info like image etc.
+
+@Application
+1. Created only once and the same bean will be use with all users, this is like Singleton
+2. Avoid the Race condition just like in Singleton, make it for mutable only
+Note: There is case where the Singleton and Application acts different, like when you define Multiple Application Context
+      your Singleton will have instance for each application where in the Application will have only one only one instance
+3. Also this is useful like when you wanna mention total number of visitor of the website
+
+                                    SPRING SECURITY
+Focus on securities and so many features to protect your web application by making a small configuration
+
+                DIFFERENCE BETWEEN AUTHENTICATION AND AUTHORIZATION
+AUTHENTICATION                                          AUTHORIZATION
+1.Identifying who is the user                          1.After identification you can access stuffs that related to you
+2.Happens before authorization                         2.Can't happen before the authentication
+3.401 error if authentication fails                    3.403 if authorization fails
+
+IMPLEMENTATION - INJECTION
+1. Inject the dependencies -> Just by injecting dependency Spring security will bring the log in without you do anything
+Note: As default the Spring will create the log in page and as default the log in user name is user and password is
+      is generally in the console where you started the project, I think it changes each time you restart the project
+
+CONFIGURING USERNAME AND PASSWORD USING APPLICATION PROPERTY
+Go to the Application properties and write these
+   spring.security.user.name = Bobzero
+   spring.security.user.password = 1234
+Note: This is not recommended because you might have so many users
+
+PERMITTING / ALLOWING ALL THE PAGE TO BE ACCESSIBLE PUBLICLY
+1. Create a class which will have the configuration annotation
+2. This class will extend the WebSecurityConfigurerAdapter
+3. Also this class shall override the configure method which accepts HttpSecurity as a method parameter
+
+formLogin() -> used for supporting username and password through an html form
+httpBasic() -> used for supporting username and password to be send inside an http header like when someone is
+trying to invoke my rest APIs
+anyRequest() -> for any Request in the website or any API
+
+Note: Also you can write your conditions in if statement like in which condition you want your website to be accessible
+      with a password and so on..
+
+DENYING ALL THE PAGE TO BE ACCESSIBLE
+...check the code for more information
+This denies even if the user is valid user
+
+Note: Normally you can use permitAll() or denyAll() on the top of whatever the case you want  and most of the times it is
+      being used in the CSS/JS/IMAGES/Rest API files
+
+COSTUME SECURITY CONFIGURATION
+1. Instead of using anyRequest() you will configure security page by page... check the code for more information
+2. Use authenticated() to only allow the valid users to access a particular page
+
+CSRF
+Thymeleaf handles the CSRF by defaults but if you don't use thyme leaf and use normal html you will get un error
+while trying to submit something to the backend.. and that is when your SpringBoot stops your get and post request
+to avoid the CSRF attack..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

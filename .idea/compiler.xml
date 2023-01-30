@@ -6,20 +6,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Exmaple10_Wiring" />
         <module name="Example12_AutowiredAnnotation" />
         <module name="Example13_AutowiredOnSetter" />
         <module name="Example8_CreatingBeansConditionally" />
         <module name="Example9_CreatingBeanWithXml" />
+        <module name="Example19_SimpleWebApp" />
         <module name="Example18_AOP_Implementation" />
         <module name="Example1_BeansCreation" />
         <module name="Example17_AOP" />
         <module name="Example7_PreDestoroyAnnotation" />
-        <module name="Example1" />
+        <module name="Example10_WiringUsingMethodCall" />
         <module name="Example5_ComponentAnnotation" />
         <module name="Example11_WiringUsingMethodParameter" />
         <module name="Example2_NoUniqueBeansException" />
         <module name="Example6_PostConsturctAnnotation" />
+        <module name="Example20_Thymeleaf" />
         <module name="Example4_PrimaryAnnotation" />
         <module name="Example3_CostumizedBeanName" />
         <module name="Example14_AutowiredOnConstructor" />
@@ -31,13 +32,24 @@
       <module name="1_Beans_creation" target="18" />
       <module name="demo" target="17" />
       <module name="Deneme" target="18" />
+      <module name="Example1" target="18" />
       <module name="Example2" target="18" />
+      <module name="Example_SimpleWebApp" target="17" />
+      <module name="Example_SimpleWebApp (1)" target="17" />
+      <module name="Example_SimpleWebApp (2)" target="17" />
+      <module name="Exmaple10_Wiring" target="18" />
+      <module name="Exmaple10_WiringUsingMethodCall" target="18" />
       <module name="Spring1" target="18" />
       <module name="untitled1" target="18" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Example19_SimpleWebApp" options="-parameters" />
+      <module name="Example20_Thymeleaf" options="-parameters" />
+      <module name="Example_SimpleWebApp" options="-parameters" />
+      <module name="Example_SimpleWebApp (1)" options="-parameters" />
+      <module name="Example_SimpleWebApp (2)" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>
