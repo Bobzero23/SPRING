@@ -270,7 +270,8 @@ DISABLING CACHE IN THYMELEAF
    This is not for java codes so if you change java code you gonna have to restart the server
 
                                 SPRING BOOT DEVTOOLS
-This makes you just write java code and just build and you are good to go so inject the dependencies
+1. This makes you just write java code and just build and you are good to go so inject the dependencies
+2. This will also takes care of the caching
 
 DOWNLOAD LIVERELOAD EXTENSION IN YOUR WEB BROWSER
 
