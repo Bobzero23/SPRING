@@ -4,7 +4,7 @@ SET UP
 Then you're ready to go.
 
 IOC(INVERSION OF CONTROL)
-Software Design Principle, instead of a programmer creating the objects the framework for them.
+Software Design Principle, instead of a programmer creating the objects the framework creates for them.
 
 LOOSE COUPLING
 It means each class and object is independent and the less classes have knowledge about other class the loose they are.
@@ -130,7 +130,7 @@ AOP (ASPECT ORIENTED PROGRAMMING) -> the point is to to move all the non-functio
 ASPECT
 1. A piece of code you want to execute when you call your business logic methods
 
-ADD LIBRARIES TO USE THE AOP -> dependency
+* ADD LIBRARIES TO USE THE AOP -> dependency
 
 AOP JARGON'S
 1. WHAT -> Aspect -> what code or logic we want to execute
@@ -173,13 +173,11 @@ and we must first inject the libraries of AOP in our Pom.xml file
   aspect logic in our join point we have to use the jointPoint.Proceed() method to tell the spring that we are done
   with our before logic so it can proceed with the target class and the it will do the after logic
 
-* I think that the targeted class shall only have to initiate the Logger object to be ready to go.
+* I think that the targeted class shall only have to initiate the Logger object to be ready to go. No I also think
+  that it works because we have the aspect annotation
 
-* I used accepted ProceedingJoinPoint as a input parameter because when we use around there will be before and after
+* I accepted ProceedingJoinPoint as a input parameter because when we use around there will be before and after
 
 * If we have more than one aspect we can use order() and pass the number to tell Spring which aspect to start with
 
-WEB APPLICATIONS
-
-SERVLET CONTAINER
-Takes the http protocol messages and convert to servlet object related request
+** THIS IS ALL FOR SPRING CORE, CONGRATULATIONS!! **
