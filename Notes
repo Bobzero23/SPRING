@@ -23,7 +23,7 @@ TYPES OF IoC CONTAINERS
 CONTEXT
 Memory location of the web application where all the bean's information and dependencies are being maintained.
 
-spEL(SPRING EXPRESSION LANGUAGE)
+SpEL(SPRING EXPRESSION LANGUAGE)
 The Strong expression language for querying and manipulating object graph at runtime like setting and getting
 property values.
 
@@ -180,9 +180,9 @@ and we must first inject the libraries of AOP in our Pom.xml file
 
 * If we have more than one aspect we can use order() and pass the number to tell Spring which aspect to start with
 
-******************* THIS IS ALL FOR SPRING CORE, CONGRATULATIONS!! ***************************************
+******************************* THIS IS ALL FOR SPRING CORE, CONGRATULATIONS!! ***********************************
 
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++ SPRING MVC  ++++++++++++++++++++++++++++++++++++++++++++++++++
 * Java actually only use objects but fronted request always uses http protocols so how does Java understands that,
   that is where the servletContainer come to picture it changes the protocols to objects I guess, and before Spring
   the developer had to create each servlet by himself. Spring has dispatcherServlet which deal with every request
