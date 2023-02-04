@@ -332,6 +332,10 @@ MODEL AND VIEW
 This object is used when you want to take an input from the user and to tell the user than you received the input by like
 maybe emptying the blanks or refreshing the page e.t.c ...
 
+BREADCRUMB
+Like when you click the Logo of the website then it refreshes the page or takes you to the homepage of Youtube
+
+
 SUBMITTING INFORMATION FROM A PAGE
 Sometimes submitting information might become hard if there a lot of info input to take from the page so for that
 there is a good approach for it by creating a package which will handle the models and there you create a pojo
