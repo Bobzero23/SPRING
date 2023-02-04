@@ -330,11 +330,19 @@ GETTING THE MESSAGE FROM THE PAGE
 
 MODEL AND VIEW
 This object is used when you want to take an input from the user and to tell the user than you received the input by like
-maybe emptying the blanks or refreshing the page e.t.c ...
+maybe emptying the blanks or refreshing the page e.t.c ... also helps us to receive and send a view to the end user.
 
 BREADCRUMB
 Like when you click the Logo of the website then it refreshes the page or takes you to the homepage of Youtube
 
+MODEL CLASS
+Normally to avoid putting unnecessary codes inside the method we can create class which will act as input and that class
+we have all the necessary inputs in its field and then inside the particular method you will put the class and the its
+object as input and that is a better way of doing it..
+
+SERVICE LATER
+Normally inside controller layer we do all the validations and after that we let the SERVICE layer to handle the info
+and once service layer is done processing the information then next step would be the PERSISTENT layer or the DATA layer
 
 SUBMITTING INFORMATION FROM A PAGE
 Sometimes submitting information might become hard if there a lot of info input to take from the page so for that

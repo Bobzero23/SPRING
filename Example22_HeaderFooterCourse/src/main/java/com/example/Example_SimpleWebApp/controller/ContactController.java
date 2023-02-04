@@ -1,5 +1,6 @@
 package com.example.Example_SimpleWebApp.controller;
 
+import com.example.Example_SimpleWebApp.model.Contact;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -20,7 +21,7 @@ public class ContactController {
         return "contact.html";
     }
 
-    @RequestMapping(value = "/saveMsg", method = POST)
+/*    @RequestMapping(value = "/saveMsg", method = POST)
     public ModelAndView saveMessage(@RequestParam String name, @RequestParam String mobileNum,
                                     @RequestParam String  email, @RequestParam String subject, @RequestParam String message) {
         log.info("Name : " + name);
@@ -29,5 +30,10 @@ public class ContactController {
         log.info("Subject : " + subject);
         log.info("Message : " + message);
         return new ModelAndView("redirect:/contact");
+    }*/
+
+    @RequestMapping(value = "/contact", method = POST)
+    public ModelAndView saveMessage(Contact contact) {
+        return new ModelAndView("redirect: /contact");
     }
 }
