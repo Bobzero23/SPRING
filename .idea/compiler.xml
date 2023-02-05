@@ -24,6 +24,7 @@
         <module name="Example2_NoUniqueBeansException" />
         <module name="Example6_PostConsturctAnnotation" />
         <module name="Example4_PrimaryAnnotation" />
+        <module name="Example24_PathVariables" />
         <module name="Example3_CostumizedBeanName" />
         <module name="Example14_AutowiredOnConstructor" />
         <module name="Example15_QualifierAnnotation" />
@@ -60,6 +61,7 @@
       <module name="Example21_EasySchoolApplication (2)" options="-parameters" />
       <module name="Example22_HeaderFooterCourse" options="-parameters" />
       <module name="Example23_RequestParameters" options="-parameters" />
+      <module name="Example24_PathVariables" options="-parameters" />
       <module name="Example_SimpleWebApp" options="-parameters" />
       <module name="Example_SimpleWebApp (1)" options="-parameters" />
       <module name="Example_SimpleWebApp (2)" options="-parameters" />

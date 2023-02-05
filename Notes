@@ -402,11 +402,12 @@ The primary difference between these two is, in QUERY param  the frontend applic
 PATH PARAM
 We use @PathVariable annotation to pass the name of the variable inside our method.
 Note: There is no default value inside path param.
-1. You need to catch the path of the variable by creating a variable inside your getting mapping in the controller file
+1. You need to catch the path of the variable by creating a variable inside your @getMapping in the controller file
 2. Pass the same variable with the same name using @PathVariable inside method input parameter
 3. After that you might want to write a logic to display the page accordingly because here is no boolean stuffs like
     inside query param check the holiday controller method for more understanding
-Note: DO NOT FORGET TO MENTION THE '/' IN THE href LINKS IN THE SCRIPTS AND BOOTSTRAPS SO IT BECOME RECOGNIZABLE BY THE SPRING FRAMEWORK
+Note: DO NOT FORGET TO MENTION THE '/' IN THE href LINKS IN THE SCRIPTS AND BOOTSTRAPS SO IT BECOME RECOGNIZABLE BY
+ THE SPRING FRAMEWORK
 
 VALIDATIONS
 Actually this one is very important imagine you ask a user to enter a phone number and then they enter their name..
