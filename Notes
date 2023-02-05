@@ -375,7 +375,7 @@ and setter, this library do create all the getter and setters in the background 
 To start to use it, You gonna have to inject its dependencies
 
 QUERY PARAM
-1. This is mostly being used in the times of filtering the products like when you go to amazon searching for products and
+1. This is mostly being used on the times of filtering the products like when you go to amazon searching for products and
 there you can filter the price like only high or whatever that the usage of the query param
 2. Between query param you use & sign to separate them and is a good practice to use to most three params
 3. We normally use the @RequestParam annotation to to accept the query or accept the form data tha we're going to receive
@@ -384,6 +384,12 @@ there you can filter the price like only high or whatever that the usage of the 
 7. After that you go the particular controller class and accepting the params
 Note: Adding your params to Model attribute will give you an advantage to be able to send them back to the user
 this are those links appear left bottom of the screen whenever hover around the cursor on the links in the website
+8. To work with query parameters first find the in the html file where the particular page is invoked so we can put the
+   query parameters like in the footer html page I where I invoke the holidays html page and you put the variables..
+9. Then you go to that particular html controller class then you past the @request param and you put the then you decide
+   if the request shall be required and then you mention the variables you put on the html page before just now.
+10.Save the input that you are receiving the frontend url in the model.addAttribute() and the reason for that is so that
+   we can send the same value back to the UI when it is needed.
 
 DISPLAYING THE COLUMN ACCORDINGLY
 Thymeleaf provides us the ability to make the html display according to the condition we put as we did in the
