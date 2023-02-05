@@ -1,8 +1,10 @@
 package com.example.Example_SimpleWebApp.controller;
 
 import com.example.Example_SimpleWebApp.model.Contact;
+import com.example.Example_SimpleWebApp.service.ContactService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,6 +16,13 @@ import static org.springframework.web.bind.annotation.RequestMethod.POST;
 
 @Controller
 public class ContactController {
+
+    private final ContactService contactService;
+
+    @Autowired
+    public ContactController(ContactService contactService) {
+        this.contactService = contactService;
+    }
 
     private static Logger log =  LoggerFactory.getLogger(ContactController.class);
     @RequestMapping("/contact")
@@ -32,8 +41,9 @@ public class ContactController {
         return new ModelAndView("redirect:/contact");
     }*/
 
-    @RequestMapping(value = "/contact", method = POST)
+    @RequestMapping(value = "/saveMsg", method = POST)
     public ModelAndView saveMessage(Contact contact) {
-        return new ModelAndView("redirect: /contact");
+        contactService.saveMessageDetails(contact);
+        return new ModelAndView("redirect:/contact");
     }
 }

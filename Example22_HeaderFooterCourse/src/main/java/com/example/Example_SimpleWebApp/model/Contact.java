@@ -3,7 +3,7 @@ package com.example.Example_SimpleWebApp.model;
 
 public class Contact {
     private String name;
-    private String mobilNum;
+    private String mobileNum;
     private String email;
     private String subject;
     private String message;
@@ -17,11 +17,11 @@ public class Contact {
     }
 
     public String getMobilNum() {
-        return mobilNum;
+        return mobileNum;
     }
 
     public void setMobilNum(String mobilNum) {
-        this.mobilNum = mobilNum;
+        this.mobileNum = mobilNum;
     }
 
     public String getEmail() {
@@ -52,7 +52,7 @@ public class Contact {
     public String toString() {
         return "Contact{" +
                 "name='" + name + '\'' +
-                ", mobilNum='" + mobilNum + '\'' +
+                ", mobilNum='" + mobileNum + '\'' +
                 ", email='" + email + '\'' +
                 ", subject='" + subject + '\'' +
                 ", message='" + message + '\'' +
