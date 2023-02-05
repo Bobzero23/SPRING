@@ -19,7 +19,7 @@ Author URL: http://w3layouts.com
 <body>
 
 <!-- header -->
-<div th:replace="header :: header">...</div>
+<div th:replace="~{header :: header}">...</div>
 <!-- //header -->
 
 <!-- inner banner -->
@@ -45,7 +45,7 @@ Author URL: http://w3layouts.com
     </div>
     <div class="row contact-block">
       <div class="col-md-7 contact-right">
-        <form th:action="@{/saveMsg}" method="post" class="signin-form">
+        <form th:action="@{/saveMsg}" method="post" class="signing-form">
           <div class="input-grids">
             <div class="row">
               <div class="col-sm-6">

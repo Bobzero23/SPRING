@@ -340,9 +340,16 @@ Normally to avoid putting unnecessary codes inside the method we can create clas
 we have all the necessary inputs in its field and then inside the particular method you will put the class and the its
 object as input and that is a better way of doing it..
 
-SERVICE LATER
+SERVICE LAYER
 Normally inside controller layer we do all the validations and after that we let the SERVICE layer to handle the info
-and once service layer is done processing the information then next step would be the PERSISTENT layer or the DATA layer
+and once service layer is done processing the information then next step would be the PERSISTENT layer or the DATA layer,
+after you finish the service layer you gonna have to inject the class to the Controller layer you can do it using
+constructor type of autoWiring.. and we do this injection so that we can use the method we created inside the Controller
+class... in this class we only create the fields, getters and setters and to String method. make sure the fields matches
+the frontend variables and names...
+
+** WHEN YOU PASS THE FIELDS TO THE CONSTRUCTOR YOU ACTUALLY DON'T NEED A SETTER BECAUSE AS YOU CALL THE CONSTRUCTOR
+   YOU WILL DEFINITELY HAVE TO PASS IN THE VALUES BUT YOU MIGHT NEED GETTERS.
 
 SUBMITTING INFORMATION FROM A PAGE
 Sometimes submitting information might become hard if there a lot of info input to take from the page so for that

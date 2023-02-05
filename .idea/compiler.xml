@@ -12,6 +12,7 @@
         <module name="Example9_CreatingBeanWithXml" />
         <module name="Example19_SimpleWebApp" />
         <module name="Example18_AOP_Implementation" />
+        <module name="Example22_HeaderFooterCourse" />
         <module name="Example1_BeansCreation" />
         <module name="Example17_AOP" />
         <module name="Example7_PreDestoroyAnnotation" />
@@ -21,7 +22,6 @@
         <module name="Example2_NoUniqueBeansException" />
         <module name="Example6_PostConsturctAnnotation" />
         <module name="Example4_PrimaryAnnotation" />
-        <module name="Example21_EasySchoolApplication (2)" />
         <module name="Example3_CostumizedBeanName" />
         <module name="Example14_AutowiredOnConstructor" />
         <module name="Example15_QualifierAnnotation" />
@@ -36,7 +36,8 @@
       <module name="Example2" target="18" />
       <module name="Example20_Thymeleaf (1)" target="17" />
       <module name="Example20_Thymeleaf (2)" target="17" />
-      <module name="Example21_EasySchoolApplication" target="17" />
+      <module name="Example21_EasySchoolApplication (1)" target="17" />
+      <module name="Example21_EasySchoolApplication (2)" target="17" />
       <module name="Example_SimpleWebApp" target="17" />
       <module name="Example_SimpleWebApp (1)" target="17" />
       <module name="Example_SimpleWebApp (2)" target="17" />
@@ -55,6 +56,7 @@
       <module name="Example21_EasySchoolApplication" options="-parameters" />
       <module name="Example21_EasySchoolApplication (1)" options="-parameters" />
       <module name="Example21_EasySchoolApplication (2)" options="-parameters" />
+      <module name="Example22_HeaderFooterCourse" options="-parameters" />
       <module name="Example_SimpleWebApp" options="-parameters" />
       <module name="Example_SimpleWebApp (1)" options="-parameters" />
       <module name="Example_SimpleWebApp (2)" options="-parameters" />
