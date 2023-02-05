@@ -1,4 +1,4 @@
-package com.example.Example_SimpleWebApp.service;
+package com.example.Example_SimpleWebApp.model;
 
 public class Holiday {
     private final String day;
