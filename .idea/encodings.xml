@@ -39,6 +39,8 @@
     <file url="file://$PROJECT_DIR$/Example24_PathVariables/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example25_ValidatingTheInputs/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example25_ValidatingTheInputs/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example26_BeanWebScopes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example26_BeanWebScopes/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example2_NoUniqueBeansException/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example2_NoUniqueBeansException/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example3_CostumizedBeanName/src/main/java" charset="UTF-8" />

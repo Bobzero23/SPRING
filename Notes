@@ -469,9 +469,16 @@ Note: you also can build your own validations
 SCOPES
 When a bean is created with these scopes
 1. @RequestScope -> every application you do in the web will result as an HTTP request
+    so is like when a user make http request each time they will get a new bean for it..
+    This one a user get only one bean whatever he does in the particular page
 2. @SessionScope -> every application you do in the web will create instance of the Session until the session in invalidated
-    like when the user cleaning the cache
+    like when the user cleaning the cache, not like @RequestScope this one does not restart a new bean each time the
+    user send the http request
+    This one a user get a new bean for each http request in the particular page
 3. @ApplicationScope -> will create a single unique bean for your entire application, each user will get the same instance
+    this one a is useful for tracking how many user a using the web coz it sends a new bean for only a new user other wise
+    there will be only one bean for each user
+
 
 USE CASES OF SCOPES
 

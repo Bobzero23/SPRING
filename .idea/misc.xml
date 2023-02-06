@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/Example23_RequestParameters/pom.xml" />
         <option value="$PROJECT_DIR$/Example24_PathVariables/pom.xml" />
         <option value="$PROJECT_DIR$/Example25_ValidatingTheInputs/pom.xml" />
+        <option value="$PROJECT_DIR$/Example26_BeanWebScopes/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
