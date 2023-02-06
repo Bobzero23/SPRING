@@ -31,6 +31,7 @@
         <module name="Example1_BeansCreation" />
         <module name="Example7_PreDestoroyAnnotation" />
         <module name="Example11_WiringUsingMethodParameter" />
+        <module name="Example28_PermitAllDenyAll" />
         <module name="Example6_PostConsturctAnnotation" />
       </profile>
     </annotationProcessing>
@@ -68,6 +69,7 @@
       <module name="Example25_ValidatingTheInputs" options="-parameters" />
       <module name="Example26_BeanWebScopes" options="-parameters" />
       <module name="Example27_SpringSecurityIntro" options="-parameters" />
+      <module name="Example28_PermitAllDenyAll" options="-parameters" />
       <module name="Example_SimpleWebApp" options="-parameters" />
       <module name="Example_SimpleWebApp (1)" options="-parameters" />
       <module name="Example_SimpleWebApp (2)" options="-parameters" />

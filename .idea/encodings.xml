@@ -43,6 +43,8 @@
     <file url="file://$PROJECT_DIR$/Example26_BeanWebScopes/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example27_SpringSecurityIntro/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example27_SpringSecurityIntro/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example28_PermitAllDenyAll/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Example28_PermitAllDenyAll/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example2_NoUniqueBeansException/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example2_NoUniqueBeansException/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example3_CostumizedBeanName/src/main/java" charset="UTF-8" />

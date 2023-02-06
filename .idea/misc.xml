@@ -23,6 +23,7 @@
         <option value="$PROJECT_DIR$/Example25_ValidatingTheInputs/pom.xml" />
         <option value="$PROJECT_DIR$/Example26_BeanWebScopes/pom.xml" />
         <option value="$PROJECT_DIR$/Example27_SpringSecurityIntro/pom.xml" />
+        <option value="$PROJECT_DIR$/Example28_PermitAllDenyAll/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
