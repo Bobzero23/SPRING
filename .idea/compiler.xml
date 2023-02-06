@@ -15,6 +15,7 @@
         <module name="Example18_AOP_Implementation" />
         <module name="Example22_HeaderFooterCourse" />
         <module name="Example23_RequestParameters" />
+        <module name="Example25_ValidatingTheInputs" />
         <module name="Example1_BeansCreation" />
         <module name="Example17_AOP" />
         <module name="Example7_PreDestoroyAnnotation" />
@@ -62,6 +63,7 @@
       <module name="Example22_HeaderFooterCourse" options="-parameters" />
       <module name="Example23_RequestParameters" options="-parameters" />
       <module name="Example24_PathVariables" options="-parameters" />
+      <module name="Example25_ValidatingTheInputs" options="-parameters" />
       <module name="Example_SimpleWebApp" options="-parameters" />
       <module name="Example_SimpleWebApp (1)" options="-parameters" />
       <module name="Example_SimpleWebApp (2)" options="-parameters" />

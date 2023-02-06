@@ -424,6 +424,12 @@ VALIDATIONS WITH SPRING BOOT
 Note: There are two libraries in Java which provides these validations, Javax and Hibernate.
 These validations we put in the Pojo classes in model package, check the contact Pojo class for more information
 Note: We need to let the contact.html know that there is a validation.
+3. To let the ui know we go to the particular ui controller class then we use the model object to be able to add the
+   attribute and then we pass the new model class object there so to give the use new object each time the use the
+   particular ui.
+4. To let the ui know about the validations we go and pass the object using Thymeleaf in the form tag of ui
+   and that is how you link them
+5. For the same you need to create the link of the fields of the bean and variable in the ui
 
 LETTING HTML KNOW ABOUT THE VALIDATION
 1. Go to your particular controller Pojo class of the particular html class
@@ -451,7 +457,7 @@ Note: Here you have a big chance to make a mess this is kinda messy work because
 11. Also redirect with String only not with Model type... this will redirect the new html page if there is no errors
 Note: Check the ContactController for more understanding
 13. And you should go to the Contact html file to display the errors which you are getting from the backend
-    past this on top of the form
+    paste this on top of the form
         <ul>
                             <li class="alert alert-danger" role="alert"
                                 th:each="error : ${#fields.errors('contact.*')}" th:text="${error}" />
