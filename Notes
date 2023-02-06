@@ -541,6 +541,11 @@ DENYING ALL THE PAGE TO BE ACCESSIBLE
 ...check the code for more information
 This denies even if the user is valid user
 
+PERMITTING ALL AND DENYING ALL
+1. Create a class for configuration and use the @Configuration
+2. Create a bean of the Interface SecurityFilterChain and then pass in the HttpSecurity class and the object inside the
+   input parameters then throw Exceptions and use the the object of the HttpSecurity class to PermitAll or DenyAll
+
 Note: Normally you can use permitAll() or denyAll() on the top of whatever the case you want  and most of the times it is
       being used in the CSS/JS/IMAGES/Rest API files
 
