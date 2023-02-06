@@ -10,7 +10,6 @@ import org.springframework.web.context.annotation.RequestScope;
 
 @Slf4j
 @Service
-@RequestScope
 public class ContactService {
 
 

@@ -7,29 +7,31 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Example12_AutowiredAnnotation" />
-        <module name="Example13_AutowiredOnSetter" />
-        <module name="Example8_CreatingBeansConditionally" />
-        <module name="Example9_CreatingBeanWithXml" />
+        <module name="Example26_BeanWebScopes" />
         <module name="Example19_SimpleWebApp" />
         <module name="Example18_AOP_Implementation" />
-        <module name="Example22_HeaderFooterCourse" />
         <module name="Example23_RequestParameters" />
         <module name="Example25_ValidatingTheInputs" />
-        <module name="Example1_BeansCreation" />
         <module name="Example17_AOP" />
-        <module name="Example7_PreDestoroyAnnotation" />
+        <module name="Example27_SpringSecurityIntro" />
         <module name="Example10_WiringUsingMethodCall" />
         <module name="Example5_ComponentAnnotation" />
-        <module name="Example11_WiringUsingMethodParameter" />
         <module name="Example2_NoUniqueBeansException" />
-        <module name="Example6_PostConsturctAnnotation" />
         <module name="Example4_PrimaryAnnotation" />
         <module name="Example24_PathVariables" />
         <module name="Example3_CostumizedBeanName" />
         <module name="Example14_AutowiredOnConstructor" />
         <module name="Example15_QualifierAnnotation" />
         <module name="Example16_Assignment" />
+        <module name="Example12_AutowiredAnnotation" />
+        <module name="Example13_AutowiredOnSetter" />
+        <module name="Example8_CreatingBeansConditionally" />
+        <module name="Example9_CreatingBeanWithXml" />
+        <module name="Example22_HeaderFooterCourse" />
+        <module name="Example1_BeansCreation" />
+        <module name="Example7_PreDestoroyAnnotation" />
+        <module name="Example11_WiringUsingMethodParameter" />
+        <module name="Example6_PostConsturctAnnotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -64,6 +66,8 @@
       <module name="Example23_RequestParameters" options="-parameters" />
       <module name="Example24_PathVariables" options="-parameters" />
       <module name="Example25_ValidatingTheInputs" options="-parameters" />
+      <module name="Example26_BeanWebScopes" options="-parameters" />
+      <module name="Example27_SpringSecurityIntro" options="-parameters" />
       <module name="Example_SimpleWebApp" options="-parameters" />
       <module name="Example_SimpleWebApp (1)" options="-parameters" />
       <module name="Example_SimpleWebApp (2)" options="-parameters" />
