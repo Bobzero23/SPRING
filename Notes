@@ -541,6 +541,11 @@ DENYING ALL THE PAGE TO BE ACCESSIBLE
 ...check the code for more information
 This denies even if the user is valid user
 
+PERMITTING ALL AND DENYING ALL
+1. Create a class for configuration and use the @Configuration
+2. Create a bean of the Interface SecurityFilterChain and then pass in the HttpSecurity class and the object inside the
+   input parameters then throw Exceptions and use the the object of the HttpSecurity class to PermitAll or DenyAll
+
 Note: Normally you can use permitAll() or denyAll() on the top of whatever the case you want  and most of the times it is
       being used in the CSS/JS/IMAGES/Rest API files
 
@@ -549,9 +554,10 @@ COSTUME SECURITY CONFIGURATION
 2. Use authenticated() to only allow the valid users to access a particular page
 
 CSRF
+Is when a hacker tries to take your authentication token and try to mimic like you then send the request to backend
 Thymeleaf handles the CSRF by defaults but if you don't use thyme leaf and use normal html you will get un error
 while trying to submit something to the backend.. and that is when your SpringBoot stops your get and post request
-to avoid the CSRF attack..
+to avoid the CSRF attack.. and if you are not handling the Spring will send the 403 error..
 
 
 

@@ -3,24 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/../Deneme/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../Deneme/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example10_WiringUsingMethodCall/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example10_WiringUsingMethodCall/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example11_WiringUsingMethodParameter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example11_WiringUsingMethodParameter/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example12_AutowiredAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example12_AutowiredAnnotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example13_AutowiredOnSetter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example13_AutowiredOnSetter/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example14_AutowiredOnConstructor/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example14_AutowiredOnConstructor/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example15_QualifierAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example15_QualifierAnnotation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example16_Assignment/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example16_Assignment/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example17_AOP/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example17_AOP/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example18_AOP_Implementation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example18_AOP_Implementation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example19_SimpleWebApp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example19_SimpleWebApp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example1_BeansCreation/src/main/java" charset="UTF-8" />
@@ -45,22 +33,8 @@
     <file url="file://$PROJECT_DIR$/Example27_SpringSecurityIntro/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example28_PermitAllDenyAll/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example28_PermitAllDenyAll/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example2_NoUniqueBeansException/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example2_NoUniqueBeansException/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example3_CostumizedBeanName/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Example3_CostumizedBeanName/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example4_PrimaryAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example4_PrimaryAnnotation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example5_ComponentAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example5_ComponentAnnotation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example6_PostConsturctAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example6_PostConsturctAnnotation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example7_PreDestoroyAnnotation/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example7_PreDestoroyAnnotation/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example8_CreatingBeansConditionally/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example8_CreatingBeansConditionally/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example9_CreatingBeanWithXml/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Example9_CreatingBeanWithXml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring1/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

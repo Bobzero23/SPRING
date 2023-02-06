@@ -9,30 +9,17 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Example26_BeanWebScopes" />
         <module name="Example19_SimpleWebApp" />
-        <module name="Example18_AOP_Implementation" />
         <module name="Example23_RequestParameters" />
         <module name="Example25_ValidatingTheInputs" />
         <module name="Example17_AOP" />
         <module name="Example27_SpringSecurityIntro" />
-        <module name="Example10_WiringUsingMethodCall" />
-        <module name="Example5_ComponentAnnotation" />
-        <module name="Example2_NoUniqueBeansException" />
-        <module name="Example4_PrimaryAnnotation" />
         <module name="Example24_PathVariables" />
         <module name="Example3_CostumizedBeanName" />
-        <module name="Example14_AutowiredOnConstructor" />
-        <module name="Example15_QualifierAnnotation" />
-        <module name="Example16_Assignment" />
-        <module name="Example12_AutowiredAnnotation" />
         <module name="Example13_AutowiredOnSetter" />
-        <module name="Example8_CreatingBeansConditionally" />
-        <module name="Example9_CreatingBeanWithXml" />
         <module name="Example22_HeaderFooterCourse" />
         <module name="Example1_BeansCreation" />
-        <module name="Example7_PreDestoroyAnnotation" />
         <module name="Example11_WiringUsingMethodParameter" />
         <module name="Example28_PermitAllDenyAll" />
-        <module name="Example6_PostConsturctAnnotation" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -40,16 +27,30 @@
       <module name="demo" target="17" />
       <module name="Deneme" target="18" />
       <module name="Example1" target="18" />
+      <module name="Example10_WiringUsingMethodCall" target="18" />
+      <module name="Example12_AutowiredAnnotation" target="18" />
+      <module name="Example14_AutowiredOnConstructor" target="18" />
+      <module name="Example15_QualifierAnnotation" target="18" />
+      <module name="Example16_Assignment" target="18" />
+      <module name="Example18_AOP_Implementation" target="18" />
       <module name="Example2" target="18" />
       <module name="Example20_Thymeleaf (1)" target="17" />
       <module name="Example20_Thymeleaf (2)" target="17" />
       <module name="Example21_EasySchoolApplication (1)" target="17" />
       <module name="Example21_EasySchoolApplication (2)" target="17" />
+      <module name="Example2_NoUniqueBeansException" target="18" />
+      <module name="Example4_PrimaryAnnotation" target="18" />
+      <module name="Example5_ComponentAnnotation" target="18" />
+      <module name="Example6_PostConsturctAnnotation" target="18" />
+      <module name="Example7_PreDestoroyAnnotation" target="18" />
+      <module name="Example8_CreatingBeansConditionally" target="18" />
+      <module name="Example9_CreatingBeanWithXml" target="18" />
       <module name="Example_SimpleWebApp" target="17" />
       <module name="Example_SimpleWebApp (1)" target="17" />
       <module name="Example_SimpleWebApp (2)" target="17" />
       <module name="Exmaple10_Wiring" target="18" />
       <module name="Exmaple10_WiringUsingMethodCall" target="18" />
+      <module name="SPRING" target="18" />
       <module name="Spring1" target="18" />
       <module name="untitled1" target="18" />
     </bytecodeTargetLevel>
