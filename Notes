@@ -559,6 +559,12 @@ Thymeleaf handles the CSRF by defaults but if you don't use thyme leaf and use n
 while trying to submit something to the backend.. and that is when your SpringBoot stops your get and post request
 to avoid the CSRF attack.. and if you are not handling the Spring will send the 403 error..
 
+MATCHER METHODS
+1. mvcMatcher -> Better if you are using Spring MVC
+2. antMatcher -> If you are not working with Spring MVC or if you are working with Rest API, less secure tho
+3. regexMatcher
+Note: You can work with all of them in the same project tho
+
 
 
 
