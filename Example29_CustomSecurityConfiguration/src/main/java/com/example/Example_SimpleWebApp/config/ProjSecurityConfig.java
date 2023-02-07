@@ -10,19 +10,17 @@ import org.springframework.stereotype.Controller;
 public class ProjSecurityConfig {
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-
-        // Permit All Requests inside the Web Application
-        http.authorizeHttpRequests().anyRequest().permitAll().
-                and().formLogin()
-                .and().httpBasic();
-
-        // Deny All Requests inside the Web Application
-            /*http.authorizeHttpRequests().anyRequest().denyAll().
-                    and().formLogin()
-                    .and().httpBasic();*/
-
-        return http.build();
-
+       http.csrf().disable()
+               .authorizeHttpRequests()
+               .requestMatchers("/home").permitAll()
+               .requestMatchers("/holidays").permitAll()
+               .requestMatchers("/contact").permitAll()
+               .requestMatchers("/saveMsg").permitAll()
+               .requestMatchers("/courses").permitAll()
+               .requestMatchers("/about").permitAll()
+               .requestMatchers("/assets/**").permitAll()
+               .and().formLogin().and().httpBasic();
+       return http.build();
     }
 
 }
