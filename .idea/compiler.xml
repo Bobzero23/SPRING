@@ -8,18 +8,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Example26_BeanWebScopes" />
+        <module name="Example13_AutowiredOnSetter" />
         <module name="Example19_SimpleWebApp" />
+        <module name="Example22_HeaderFooterCourse" />
         <module name="Example23_RequestParameters" />
         <module name="Example25_ValidatingTheInputs" />
+        <module name="Example1_BeansCreation" />
         <module name="Example17_AOP" />
         <module name="Example27_SpringSecurityIntro" />
-        <module name="Example24_PathVariables" />
-        <module name="Example3_CostumizedBeanName" />
-        <module name="Example13_AutowiredOnSetter" />
-        <module name="Example22_HeaderFooterCourse" />
-        <module name="Example1_BeansCreation" />
         <module name="Example11_WiringUsingMethodParameter" />
         <module name="Example28_PermitAllDenyAll" />
+        <module name="Example20_Thymeleaf" />
+        <module name="Example21_EasySchoolApplication" />
+        <module name="Example24_PathVariables" />
+        <module name="Example3_CostumizedBeanName" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
