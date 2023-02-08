@@ -584,6 +584,24 @@ invalidating the session like after the user has successfully logged out
 Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 Using this we can get the current Authentication details
 
+EXCEPTION HANDLING
+This is very useful so that we can provide our own error message according to the end user and Spring provides some
+annotations to help us do this.
+
+@ControllerAdvice @ExceptionHandler
+1. The class with this annotation will act as intercept globally among all your class and will handle the errors
+2. For the class which shall be handling their errors you will write a method with @ExceptionHandler on top and you
+   can write you own logic accordingly
+Note: You can use @ExceptionHandler inside a particular Controller class but if you write the same annotation inside
+the ControllerAdvice it will be globally working
+
+DEEP DIVING TO CSRF (CROSS SITE REQUEST FORGERY)
+1. Is like the hacker takes your token of your website and tries to use as you
+CHECK THIS SUBJECT AGAIN BECAUSE YOU DIDNT IMPLEMENT
+
+SPRING BOOT AND H2 DATABASE
+1. This is some kinda embedded database like when you want to create a quick database for your webapp
+
 
 
 

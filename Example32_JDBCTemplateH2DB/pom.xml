@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>Example30_InMemoryAuthentication</artifactId>
+	<artifactId>Example31_ExceptionHandling</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Example30_InMemoryAuthentication</name>
+	<name>Example31_ExceptionHandling</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -58,6 +58,16 @@
 		<dependency>
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<!--The app only needs the database and the JDBC driver at
+            runtime. The app doesn’t need them for compilation. To instruct Maven we
+            only want these dependencies at runtime,we add the scope tag with the
+            value “runtime.”-->
+			<scope>runtime</scope>
 		</dependency>
 
 	</dependencies>
