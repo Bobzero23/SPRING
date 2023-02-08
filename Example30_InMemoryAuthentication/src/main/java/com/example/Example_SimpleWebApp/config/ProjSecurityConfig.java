@@ -56,6 +56,7 @@ public class ProjSecurityConfig {
     }
 
 
+    //This one is not being used anymore
  /*   protected void configure(AuthenticationManagerBuilder auth) throws Exception{
         auth.inMemoryAuthentication()
                 .withUser("user").password("1234").roles("USER")

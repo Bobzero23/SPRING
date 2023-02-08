@@ -566,8 +566,23 @@ MATCHER METHODS
 Note: You can work with all of them in the same project tho
 
 
+IN MEMORY AUTHENTICATION
+We can provide authentication to the users using a method called InMemoryUserDetailsManager
+
+** HAD A PROBLEM WHILE TRYING TO ACCESS THE LOCAL HOST WAS DENYING BECAUSE I DIDN'T KNOW THAT EVEN IT SHOULD BE /HOME
+
+defaultSuccessUrl("/")
+Telling spring what should happen if a particular page is authenticated successfully
+
+failureUrl("/")
+Telling Spring what shall happen if the particular page is authenticated without success
+
+invalidateHttpSession(True)
+invalidating the session like after the user has successfully logged out
 
 
+Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+Using this we can get the current Authentication details
 
 
 
