@@ -1,6 +1,7 @@
 package com.example.Example_SimpleWebApp.config;
 
 
+import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -16,22 +17,30 @@ import org.springframework.security.web.SecurityFilterChain;
 public class ProjSecurityConfig {
     @Bean
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
-       http.csrf().disable()
-               .authorizeHttpRequests()
-               .requestMatchers("/dashboard").authenticated() //new
-               .requestMatchers("/home").permitAll()
-               .requestMatchers("/holidays/**").permitAll()
-               .requestMatchers("/contact").permitAll()
-               .requestMatchers("/saveMsg").permitAll()
-               .requestMatchers("/courses").permitAll()
-               .requestMatchers("/about").permitAll()
-               .requestMatchers("/login").permitAll() //new
-               .requestMatchers("/assets/**").permitAll()
-               .and().formLogin().loginPage("/login")
-               .defaultSuccessUrl("/dashboard").failureUrl("/login?error=true").permitAll()
-               .and().logout().logoutSuccessUrl("/login?logout=true").invalidateHttpSession(true).permitAll()
-               .and().httpBasic();
-       return http.build();
+        http.csrf().ignoringRequestMatchers("/saveMsg").ignoringRequestMatchers(PathRequest.toH2Console()).and()
+                .authorizeHttpRequests()
+                .requestMatchers("/dashboard").authenticated()
+                .requestMatchers("/displayMessages").hasRole("ADMIN")
+                .requestMatchers("/closeMsg/**").hasRole("ADMIN")
+                .requestMatchers("/home").permitAll()
+                .requestMatchers("/holidays/**").permitAll()
+                .requestMatchers("/contact").permitAll()
+                .requestMatchers("/saveMsg").permitAll()
+                .requestMatchers("/courses").permitAll()
+                .requestMatchers("/about").permitAll()
+                .requestMatchers("/login").permitAll()
+                .requestMatchers("/logout").permitAll()
+                .requestMatchers("/assets/**").permitAll()
+                .requestMatchers(PathRequest.toH2Console()).permitAll()
+                .and().formLogin().loginPage("/login")
+                .defaultSuccessUrl("/dashboard").failureUrl("/login?error=true").permitAll()
+                .and().logout().logoutSuccessUrl("/login?logout=true").invalidateHttpSession(true).permitAll()
+                .and().httpBasic();
+
+        http.headers().frameOptions().disable();
+
+        return http.build();
+
     }
 
     @Bean
@@ -56,12 +65,4 @@ public class ProjSecurityConfig {
     }
 
 
-    //This one is not being used anymore
- /*   protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.inMemoryAuthentication()
-                .withUser("user").password("1234").roles("USER")
-                .and()
-                .withUser("admin").password("4321").roles("USER","ADMIN")
-                .and().passwordEncoder(NoOpPasswordEncoder.getInstance());
-    }*/
 }

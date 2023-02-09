@@ -602,8 +602,27 @@ CHECK THIS SUBJECT AGAIN BECAUSE YOU DIDNT IMPLEMENT
 SPRING BOOT AND H2 DATABASE
 1. This is some kinda embedded database like when you want to create a quick database for your webapp
 
+SCOPE TAG IN POM XML
+For example when we say <scope>Runtime</scope> this means that dependency shall only works on runtime
+
+WORK WITH H2DB
+1. After injecting dependencies create the sql file
+2. Pass in the requirements
+3. Write the configurations in the  application properties file
+    here the password part is gonna be empty
+    spring.jpa.hibernate.ddl-auto=update -> tell that don't delete while updating the columns or database
+    spring.h2.console.enabled=true -> this one that we can see the database on the console
+    spring.jpa.show-sql=true -> this one so that we can see the executed queries on the console
+4. Create the configuration source file if it is needed
+5. Then you gonna have to configure the settings coz Spring will deny the page of h2 console as default, after doing
+    the configuration in SecurityConfig class you will be good to go.
 
 
+WORKING WITH SPRING JDBC
+1. Provide the credentials parameters
+2. Specify the Sql statement
+3. Declare parameters and provide parameter values
+4. Do the work for each iteration
 
 
 
