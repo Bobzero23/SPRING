@@ -642,7 +642,8 @@ NOTE: As a developer if you are working with the SpringBoot you don't have to cr
     constructor of class the SpringBoot will handle the rest.
 5. Inside that the repository class write the method that will take the data from the particular pojo class this method
     returning value shall be int, and return with the jdbcTemplate with the needed infos from the fields of the pojo.
-6. Autowire the Repository inside the corresponding Service class.
+6. Autowire the Repository inside the corresponding Service class so that you can invoke its methods
+
 
 
 
