@@ -619,15 +619,30 @@ WORK WITH H2DB
 
 
 WORKING WITH SPRING JDBC
+Note: First create the bean of Datasource -> This one provides the connection of the database
 1. Provide the credentials parameters
 2. Specify the Sql statement
 3. Declare parameters and provide parameter values
 4. Do the work for each iteration
+5. Use the jdbcTemplate object on each transaction
+6. To run the query use the queryForObject() method
+    This method takes the query as its first parameter and then the Type.class and then variable if necessary
+    Note: we also have some methods such as execute() for ddl and update() for updating
+NOTE: All of these are necessary only if you are not building your webApp using SpringBoot coz if you are using it
+will handle some of these steps and make your life easier
 
-
-
-
-
+SPRING JDBC IMPLEMENTATION
+1. You have to sync all the data you have mentioned in the sql file to the corresponding pojo class
+2. And for the "created" and "updated" fields we gonna have to put them in the different class coz we gonna use the all
+    the time we create the schemas so that is why..
+3. Create the repository class for the particular corresponding pojo class dont forget the @Repository on it
+NOTE: As a developer if you are working with the SpringBoot you don't have to create the Datasource bean or the
+    JdbcTemplate bean because the SpringBoot will create for you based on your Application.properties configurations
+4. Inside that the repository class write the create the initialize JdbcTemplate class and auto wire it using the
+    constructor of class the SpringBoot will handle the rest.
+5. Inside that the repository class write the method that will take the data from the particular pojo class this method
+    returning value shall be int, and return with the jdbcTemplate with the needed infos from the fields of the pojo.
+6. Autowire the Repository inside the corresponding Service class.
 
 
 
