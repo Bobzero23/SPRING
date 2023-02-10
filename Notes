@@ -645,6 +645,21 @@ NOTE: As a developer if you are working with the SpringBoot you don't have to cr
 6. Autowire the Repository inside the corresponding Service class so that you can invoke its methods
 
 
+ENHANCING THE DASHBOARD
+1. We are going to put the page that only admin can see it..
+    for that we gonna have to let the UI know about the rule using sec:authorize of the thymeleaf
+2. Also we going to put the welcome part in the dash board
+    Note: Don't forget to add the corresponding css
+3. Then we create a method in the UI corresponding controller class, inside it create a list with will hold the data
+    of the particular pojo class with object of the the corresponding service class which there is a method which is
+    gonna help us to fetch up the list.
+4. Then we gonna add them to the modelView and then we add the attribute then return modelAndView object
+5. And also the corresponding service class will also fetch data from the repository class.
+6. In the contact repository we create a method to fect data
+
+
+
+
 
 
 
