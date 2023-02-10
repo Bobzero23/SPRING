@@ -1,7 +1,7 @@
 package com.example.Example_SimpleWebApp.constants;
 
 public interface EazySchoolConstants {
-    public final String ANONYMOUS = "anonymous";
-    public final String OPEN = "open";
-    public final String CLOSE = "close";
+    public static final String ANONYMOUS = "Anonymous";
+    public static final String OPEN = "Open";
+    public static final String CLOSE = "Close";
 }
