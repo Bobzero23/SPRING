@@ -686,10 +686,12 @@ Note: now if you test the connection again it will be successful
     table if you can not see the table try to reconnect and there you go..
 8. Add the data to the table you want like I did to the holidays table I created..
 
-
-
-
-
+APPLYING THE CHANGES TO THE FRONTEND
+1. First if you try to enter to holidays UI where I put we put our data in database you will get some errors like
+    css wont display because you must put the the "/" on each "asset/**" tag, another error you will get is
+    uncategorized sql exception, to solve this you gonna have to pass the name of the database in the application.
+    properties like this "/eazyshool" and after that you might get another error if the query in corresponding repo
+    class is uppercase or lowercase
 
 
 
