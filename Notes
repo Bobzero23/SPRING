@@ -668,9 +668,23 @@ just pass two parameters
 namedParameterJdbcTemplate
 This one allow us to use variables instead of putting the question mark on queries and mapping them.. look it up
 
+CREATING AWS CLOUD DATABASE
+Simply create an account then go to RDB -> DATABASE -> DATABASE PLATFORM -> FILL THE CONFIGURATION then done.
 
-
-
+TO WORK WITH DATABASE
+1. After creating the cloud data base from amazon now download the sqlectron app
+2. After downloading the app add the database you wanna work with
+3. Fill the blanks with the corresponding aws created database
+4. On the server address section paste the security link of your aws database
+Note: After finish filling the required blanks not all blanks and if you test the connection it won't work because
+    the aws database doesn't allow all the address you gonna have to configure that yourself,
+5. click the name of the database you wanna work with.. then click inbound rules, add the type and the source and the
+    port if it is required, then add rule.. make sure you add all the "everywhere" sources
+Note: now if you test the connection again it will be successful
+6. Add the dependency of the MySql Driver
+7. Add the schema and the data then go to the sqlectron write your queries there and refresh the database to see the
+    table if you can not see the table try to reconnect and there you go..
+8. Add the data to the table you want like I did to the holidays table I created..
 
 
 
