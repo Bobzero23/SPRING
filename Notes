@@ -616,6 +616,7 @@ WORK WITH H2DB
 4. Create the configuration source file if it is needed
 5. Then you gonna have to configure the settings coz Spring will deny the page of h2 console as default, after doing
     the configuration in SecurityConfig class you will be good to go.
+NOTE: THIS DATABASE IS ALL FOR (POC) WHENEVER YOU RESTART THE SERVER THE DATA WILL ALSO BE GONE
 
 
 WORKING WITH SPRING JDBC
@@ -655,8 +656,17 @@ ENHANCING THE DASHBOARD
     gonna help us to fetch up the list.
 4. Then we gonna add them to the modelView and then we add the attribute then return modelAndView object
 5. And also the corresponding service class will also fetch data from the repository class.
-6. In the contact repository we create a method to fect data
+6. In the contact repository we create a method to fetch data
 
+** ANY FILE THAT IS GONNA CONTAIN DATA INSERTION MUST BE MAINTAINED INSIDE DATA.SQL
+
+BeanPropertyRowMapper
+If the fields inside your pojo class and the fields columns inside your table are exactly matching you can use this
+but make sure you create an instance of the rowMapper and mention the class so that in the jdbcTemplate query you will
+just pass two parameters
+
+namedParameterJdbcTemplate
+This one allow us to use variables instead of putting the question mark on queries and mapping them.. look it up
 
 
 
