@@ -733,6 +733,12 @@ WORK WITH AUDITING
 2. Create a component class which will get the name of the auditor
 3. Enable the configurations in the spring main class
 
+th:href="@{/public/register}" -> This means the link to the register page will be publicly allowed anyone can access it
+    and you gonna have to pass the mapping in the corresponding controller class.
 
 
-
+SPRING MVC CUSTOM VALIDATORS
+1. Build you own custom annotation, mention the pojo that you mention the logic of the customized annotations
+    Note: you can follow the built in annotations to create yours on the maven projects jars
+2. Implement the ConstraintValidator interface to the pojo class we validate our annotations we created
+3. Use the annotation on the top of the fields of the pojo class
