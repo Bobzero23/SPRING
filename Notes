@@ -694,14 +694,44 @@ APPLYING THE CHANGES TO THE FRONTEND
     class is uppercase or lowercase
 
 
+******************************************SPRING DATA JPA********************************************
+JPA
+1. Is just specification that defines object relation mapping
 
+TO WORK WITH SPRING DATA JPA
+1. Create the relation between the pojo class and the database and Spring Data Jpa will handle the queries and to
+    do that mention @Entity on the top of the pojo class so that Spring will understand that this class is corresponding
+    to a particular database table
+2. Add @Table(name="table") and mention the table here
+3. Create the relation between columns on the pojo class with the database if and only if they are not matching names
+4. Mention the primary key and also tell who is going to generate tha primary key
+5. Create interface for the given table entity and extend one of the framework provided by repository interfaces
+    Note: inside the extended interface you pass the name of the pojo class and the type of the primary key
+6. Enable jpa functionality and scanning by mentioning the required annotation on the spring main class. so that
+    Spring will create the beans.
 
+** save() is a crudRepository method which is used for saving and updating the data.
 
+** @mappedSuperClass -> if the class has this annotation then its entities will also be considered as column
+@enumerated -> use this if you have any column which is the value is enum
 
+DERIVED QUERY METHODS
+These methods helps us to make our own customized queries regards on what we wanna search for..
+Note: Spring data Jpa will make query depends on the name of these methods we are creating
 
+AUDITING SUPPORT
+Like these 4 columns
+ + created_at
+ + created_by
+ + updated_at
+ + updated_by
+Note: this are so important details to know whenever we deal with data that is why Spring data give us some annotations
+    to work with these columns
 
-
-
+WORK WITH AUDITING
+1. Give the required annotations to the fields and also this class shall have some annotations and implementations too
+2. Create a component class which will get the name of the auditor
+3. Enable the configurations in the spring main class
 
 
 
