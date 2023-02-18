@@ -18,7 +18,7 @@ public class PasswordStrengthValidator implements ConstraintValidator<PasswordVa
     }
 
     @Override
-    public boolean isValid(String PasswordField, ConstraintValidatorContext context) {
-        return false;
+    public boolean isValid(String passwordField, ConstraintValidatorContext cxt) {
+        return passwordField != null && (!weakPasswords.contains(passwordField));
     }
 }

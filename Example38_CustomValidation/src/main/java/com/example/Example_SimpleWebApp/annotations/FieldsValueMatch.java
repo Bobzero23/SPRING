@@ -3,6 +3,7 @@ package com.example.Example_SimpleWebApp.annotations;
 /*The purpose behind this annotation is to check if two fields are matching*/
 
 
+import com.example.Example_SimpleWebApp.validations.FieldsValueMatchValidator;
 import jakarta.validation.Constraint;
 import jakarta.validation.Payload;
 
@@ -19,7 +20,7 @@ public @interface  FieldsValueMatch {
     Class<? extends Payload>[] payload() default {};
     String message() default "Fields values don't match";
 
-    /*Here we tell Spring that we have two fields we gonna validate*/
+    /*Here we tell Spring that we have two fields we are going to validate*/
     String field();
     String fieldMatch();
     @Target({ElementType.TYPE})
@@ -29,4 +30,4 @@ public @interface  FieldsValueMatch {
         }
     }
 
-}
+

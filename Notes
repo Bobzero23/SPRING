@@ -742,3 +742,6 @@ SPRING MVC CUSTOM VALIDATORS
     Note: you can follow the built in annotations to create yours on the maven projects jars
 2. Implement the ConstraintValidator interface to the pojo class we validate our annotations we created
 3. Use the annotation on the top of the fields of the pojo class
+
+@Transient
+The field will not be considered with the spring jpa when it comes to database.

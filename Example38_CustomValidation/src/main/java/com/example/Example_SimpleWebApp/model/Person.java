@@ -46,7 +46,7 @@ public class Person extends BaseEntity{
 
     @NotBlank(message="Confirm Email must not be blank")
     @Email(message = "Please provide a valid confirm email address" )
-    @Transient
+    @Transient // here we tell spring to not consider this field on database
     private String confirmEmail;
 
     @NotBlank(message="Password must not be blank")
