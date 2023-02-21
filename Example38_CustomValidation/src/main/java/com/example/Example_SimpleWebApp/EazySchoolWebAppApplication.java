@@ -9,7 +9,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication
 @EnableJpaRepositories("com.example.Example_SimpleWebApp.repository")
 @EntityScan("com.example.Example_SimpleWebApp.model")
-@EnableJpaAuditing(auditorAwareRef = "AuditAwareImpl")
+@EnableJpaAuditing(auditorAwareRef = "auditAwareImpl")
 public class EazySchoolWebAppApplication{
 
 	public static void main(String[] args) {

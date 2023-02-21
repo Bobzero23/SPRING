@@ -745,3 +745,12 @@ SPRING MVC CUSTOM VALIDATORS
 
 @Transient
 The field will not be considered with the spring jpa when it comes to database.
+
+UNI DIRECTION AND BI DIRECTION
+Uni direction is like only one sided direction for example one to one
+Bi direction is a good example of one to many
+Note: How does spring know about this, like if you mention the configuration only in one class it will understand
+    that, it is uni direction (one to one)
+
+VALIDATIONS USING SPRING SECURITYA AND SPRING JPA
+Note: This is like when you save the new user to the database then 
