@@ -752,5 +752,12 @@ Bi direction is a good example of one to many
 Note: How does spring know about this, like if you mention the configuration only in one class it will understand
     that, it is uni direction (one to one)
 
-VALIDATIONS USING SPRING SECURITYA AND SPRING JPA
-Note: This is like when you save the new user to the database then 
+VALIDATIONS USING SPRING SECURITY AND SPRING JPA
+Note: This is like when you save the new user to the database then, next time when they wanna log in to the web page
+    they are going to authenticated using spring Security and Spring Jpa
+1. Tell the spring to enable Spring Security
+    Note: This is optional if your are using spring boot
+2. Create new bean that will implement authentication provider interface
+    Note: here you gonna have to override two method and one of them is authenticate, this method will get the password
+    and username and from the ui and then you can do some validations using them. And the second method is support which
+    I don't actually know how it works but if this method fail the authenticate method won't even be considered.
