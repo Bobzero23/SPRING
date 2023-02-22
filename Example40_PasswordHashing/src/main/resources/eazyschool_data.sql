@@ -27,3 +27,8 @@ VALUES ('ADMIN',CURDATE(),'DBA');
 
 INSERT INTO `roles` (`role_name`,`created_at`, `created_by`)
 VALUES ('STUDENT',CURDATE(),'DBA');
+
+DELETE FROM `person` where email = `admin@eazyschol.com`;
+
+INSERT INTO `person` (`name`,`email`,`mobile_number`,`pwd`,`role_id`,`created_at`, `created_by`)
+VALUES ('Admin','admin@eazyschool.com','3443434343','$2a$12$h0Ac0KhE2fWTgIck1LRRdeXPaO4ad.GyrEKZXEMKD.1uLOBnJ5Yi.', 1 ,CURDATE(),'DBA');
