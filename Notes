@@ -766,3 +766,21 @@ Note: This is like when you save the new user to the database then, next time wh
 
 HASHING PASSWORDS
 1. In projectConfig class create the bean for your preference hashing method
+
+FETCH DATA FROM DB AND DISPLAY ON THE PROFILE WEBPAGE
+** After creating all the controller and model classes
+1. Create a method which will take the HttpSession object as a parameter
+2. Add session session inside the method and there you mention the object of the class which the data base will take
+    the data from
+3. Access the session object in the method which display the page that is going to display the data from database
+4. Get the session using the object of session you accepted with getSession() method into the db object class
+
+SAVING FROM UI TO DB
+1. Autowire the corresponding database repository class
+
+
+
+
+
+
+
