@@ -781,7 +781,12 @@ SAVING FROM UI TO DB
 ** @Data might cause some issues when you are doing ORM transition, because it also creates the toString method which
     is a problem some how so it is better to just use the @Getter and @Setter
 
-
+WORKING WITH MANY TO MANY
+1. All tables must have their own @Entity
+2. Create the field of each other with the object of SET
+3. Use many to many and joinTable and configure the fetch types
+4. You also gonna need intermediate table to handle those two tables
+    Note: you don't have to creat the repository for intermediate table
 
 
 
