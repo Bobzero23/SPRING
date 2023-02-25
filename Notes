@@ -778,6 +778,8 @@ FETCH DATA FROM DB AND DISPLAY ON THE PROFILE WEBPAGE
 SAVING FROM UI TO DB
 1. Autowire the corresponding database repository class
 
+** @Data might cause some issues when you are doing ORM transition, because it also creates the toString method which
+    is a problem some how so it is better to just use the @Getter and @Setter
 
 
 

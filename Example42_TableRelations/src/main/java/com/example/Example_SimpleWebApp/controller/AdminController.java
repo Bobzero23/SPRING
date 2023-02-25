@@ -42,7 +42,7 @@ public class AdminController {
     public ModelAndView deleteClass(Model model, @RequestParam int id) {
         Optional<EazyClass> eazyClass = eazyClassRepository.findById(id);
         for(Person person : eazyClass.get().getPersons()){
-            person.setEazyClass(null);
+            person.setEazyClass(null); // setting the foreign key to null
             personRepository.save(person);
         }
         eazyClassRepository.deleteById(id);
