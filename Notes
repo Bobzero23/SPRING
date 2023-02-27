@@ -788,6 +788,23 @@ WORKING WITH MANY TO MANY
 4. You also gonna need intermediate table to handle those two tables
     Note: you don't have to creat the repository for intermediate table
 
+    /********************************************************************************************************/
+                              SKIPPED SOME COURSES AND JUMPED TO REST SERVICES
+    /********************************************************************************************************/
 
+
+BUILDING REST SERVICES WITH THE HELP OF SPRING MVC
+1. Using @ResponseBody annotation we tell the Spring to not use the controller class we just need the data
+    Note: this also changes Java objects to Json
+2. You don't return anything related to view or UI
+3. Create a controller class and allow it in Project config
+4. If there is CSRF, then use ignoringAntMatchers for the url path you created for rest
+
+Error: Required body -> Because I did not mention that the file was JSON While typing the body, error line 94th
+
+@RequestBody -> Changes Json to Java Object format
+
+@RestController -> Helpful instead of mentioning @ResponseBody and @Controller, you can just mention this one on top
+    of the class and you are good to go.
 
 
