@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/APIs.iml" filepath="$PROJECT_DIR$/.idea/APIs.iml" />
       <module fileurl="file://$PROJECT_DIR$/bookstore/bookstore.iml" filepath="$PROJECT_DIR$/bookstore/bookstore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/personAPI/personAPI.iml" filepath="$PROJECT_DIR$/personAPI/personAPI.iml" />
     </modules>
   </component>
 </project>
