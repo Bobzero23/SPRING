@@ -807,4 +807,5 @@ Error: Required body -> Because I did not mention that the file was JSON While t
 @RestController -> Helpful instead of mentioning @ResponseBody and @Controller, you can just mention this one on top
     of the class and you are good to go.
 
-
+ResponseEntity and RequestEntity
+We use this two classes to send or to receive information from the end user or postman
