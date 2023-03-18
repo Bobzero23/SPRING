@@ -14,7 +14,7 @@ import java.util.UUID;
 public class Book {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "id", updatable = false, nullable = false, columnDefinition = "BINARY(16)")
+    @Column(name = "id", updatable = false, nullable = false, columnDefinition = "varchar(36)")
     private UUID id;
     private String name;
     private String author;
