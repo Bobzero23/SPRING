@@ -1,8 +1,8 @@
 package com.personAPI.controller;
 
+import com.personAPI.dto.PersonDto;
 import com.personAPI.model.Person;
-import com.personAPI.service.PersonService;
-import org.hibernate.sql.Update;
+import com.personAPI.impl.PersonServiceImpl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,26 +15,27 @@ import java.util.Optional;
 @RequestMapping("/api/persons")
 public class PersonController {
 
-    private final PersonService personService;
+    private final PersonServiceImpl personService;
 
-    public PersonController(PersonService personService) {
+    public PersonController(PersonServiceImpl personService) {
         this.personService = personService;
     }
 
     @PostMapping
-    public ResponseEntity<Person> createPerson(@RequestBody @Valid Person person) {
-        Person createdPerson = personService.createPerson(person);
-        return ResponseEntity.status(HttpStatus.CREATED).body(createdPerson);
+    public ResponseEntity<PersonDto> createPerson(@RequestBody @Valid PersonDto personDto) {
+        PersonDto createdPersonDto = personService.createPersonDto(personDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(createdPersonDto);
     }
 
     @GetMapping
-    public List<Person> getAllPersons() {
-        return personService.getAllPerson();
+    public List<PersonDto> getAllPersons() {
+        List<PersonDto> persons = personService.getAllPersons();
+        return persons;
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Person> getPersonById(@PathVariable Long id) {
-        Optional<Person> optionalPerson = personService.getPersonById(id);
+    public ResponseEntity<PersonDto> getPersonById(@PathVariable Long id) {
+        Optional<PersonDto> optionalPerson = personService.getPersonById(id);
         if (optionalPerson.isPresent()) {
             return ResponseEntity.ok(optionalPerson.get());
         }else {
@@ -43,8 +44,8 @@ public class PersonController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Person> updatePerson(@PathVariable Long id,@RequestBody @Valid Person updatedPerson) {
-        Person updated = personService.updatePerson(id, updatedPerson);
+    public ResponseEntity<PersonDto> updatePerson(@PathVariable Long id,@RequestBody @Valid PersonDto updatedPersonDto) {
+        PersonDto updated = personService.updatePersonDto(id, updatedPersonDto);
         return ResponseEntity.ok(updated);
     }
 
