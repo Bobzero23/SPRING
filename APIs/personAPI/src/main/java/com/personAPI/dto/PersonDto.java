@@ -1,6 +1,8 @@
 package com.personAPI.dto;
 
+import lombok.Data;
 
+@Data
 public class PersonDto {
 
     private long id;
