@@ -1,7 +1,6 @@
 package com.personAPI.service;
 
 import com.personAPI.dto.PersonDto;
-import com.personAPI.model.Person;
 
 
 import java.util.List;

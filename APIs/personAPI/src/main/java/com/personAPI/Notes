@@ -1,0 +1,2 @@
++ ModelMapper is a 3rd part, and to use you need to put dependencies and configure then bean in the configuration.
++ Evn if you are using impl make sure you use the original service class in the controller class

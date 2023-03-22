@@ -1,8 +1,7 @@
 package com.personAPI.controller;
 
 import com.personAPI.dto.PersonDto;
-import com.personAPI.model.Person;
-import com.personAPI.impl.PersonServiceImpl;
+import com.personAPI.service.PersonService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -15,9 +14,9 @@ import java.util.Optional;
 @RequestMapping("/api/persons")
 public class PersonController {
 
-    private final PersonServiceImpl personService;
+    private final PersonService personService;
 
-    public PersonController(PersonServiceImpl personService) {
+    public PersonController(PersonService personService) {
         this.personService = personService;
     }
 
