@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class PersonServiceImpl implements PersonService {
@@ -30,12 +31,16 @@ public class PersonServiceImpl implements PersonService {
 
     @Override
     public List<PersonDto> getAllPersons() {
-        return null;
+        List<Person> personList = personRepository.findAll();
+        List<PersonDto> personDtoList = personList.stream().map(person -> modelMapper.map
+                (person, PersonDto.class)).collect(Collectors.toList());
+        return personDtoList;
     }
 
     @Override
-    public Optional<PersonDto> getPersonById(PersonDto personDto) {
-        return Optional.empty();
+    public Optional<PersonDto> getPersonById(long id) {
+        Optional<Person> optionalPerson = personRepository.findById(id);
+        return optionalPerson.map(person -> modelMapper.map(person, PersonDto.class));
     }
 
     @Override

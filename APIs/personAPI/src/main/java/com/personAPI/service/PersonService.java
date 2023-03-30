@@ -9,7 +9,7 @@ public interface PersonService {
 
     PersonDto createPerson(PersonDto personDto);
     List<PersonDto> getAllPersons();
-    Optional<PersonDto> getPersonById(PersonDto personDto);
+    Optional<PersonDto> getPersonById(long id);
     PersonDto updatePerson(long id);
     boolean deletePerson(long id);
 
