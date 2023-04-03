@@ -6,7 +6,10 @@ import com.personAPI.reposistory.PersonRepository;
 import com.personAPI.service.PersonService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
+import javax.persistence.EntityNotFoundException;
+import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -44,12 +47,30 @@ public class PersonServiceImpl implements PersonService {
     }
 
     @Override
-    public PersonDto updatePerson(long id) {
-        return null;
+    public PersonDto updatePerson(long id, PersonDto updatedPersonDto) {
+        Optional<Person> optionalPerson = personRepository.findById(id);
+
+        if(optionalPerson.isPresent()) {
+            Person person = optionalPerson.get();
+            person.setName(updatedPersonDto.getName());
+            person.setAge(updatedPersonDto.getAge());
+            Person updatedPerson = personRepository.save(person);
+            return modelMapper.map(updatedPerson, PersonDto.class);
+        }else {
+            throw new EntityNotFoundException("Person with id " + id + " not found!!");
+        }
     }
 
     @Override
     public boolean deletePerson(long id) {
-        return false;
+        Optional<Person> optionalPerson = personRepository.findById(id);
+
+        if(optionalPerson.isPresent()) {
+            personRepository.deleteById(id);
+            return true;
+        }else {
+            return false;
+        }
+
     }
 }

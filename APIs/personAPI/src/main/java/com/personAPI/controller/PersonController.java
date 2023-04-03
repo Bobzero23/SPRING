@@ -42,8 +42,27 @@ public class PersonController {
         }else {
             return ResponseEntity.notFound().build();
         }
-
     }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<PersonDto> updatePerson(@PathVariable long id, @RequestBody PersonDto updatedPersonDto) {
+        PersonDto updatedPerson = personService.updatePerson(id, updatedPersonDto);
+        return ResponseEntity.ok(updatedPerson);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deletePersonById(@PathVariable long id) {
+        boolean isDeleted = personService.deletePerson(id);
+
+        if (isDeleted) {
+            return ResponseEntity.ok("Person with id " + id + " is deleted Successfully");
+        }else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("The person with id " + id + " is not found");
+        }
+    }
+
+
 
 
 }
