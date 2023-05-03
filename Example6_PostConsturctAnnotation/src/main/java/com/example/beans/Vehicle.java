@@ -3,6 +3,7 @@ package com.example.beans;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 
 @Component
 public class Vehicle {
@@ -19,6 +20,7 @@ public class Vehicle {
 
     @PostConstruct
     public void initialize() {
+        System.out.println("The bean is created now");
         this.name = "Ferrari";
     }
 
