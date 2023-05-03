@@ -10,7 +10,6 @@ import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
-        /**creating object of the context application*/
         var context = new AnnotationConfigApplicationContext(ProjConfig.class);
 
         Vehicle volkswagen = new Vehicle();
