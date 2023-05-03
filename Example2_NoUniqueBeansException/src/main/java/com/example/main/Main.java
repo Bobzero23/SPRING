@@ -6,14 +6,14 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main {
     public static void main(String[] args) {
-        /**A normal Java object */
+        /*A normal Java object */
         Vehicle vehicle = new Vehicle();
         vehicle.setName("Honda");
         System.out.println("This bean of the normal Java class is : " + vehicle.getName());
 
-        /**Using Spring Beans*/
+        /*Creating Spring Beans*/
         var context = new AnnotationConfigApplicationContext(ProjConfig.class);
-        Vehicle veh = context.getBean("vehicle1", Vehicle.class);
+        Vehicle veh = context.getBean( Vehicle.class);
         System.out.println("The bean of the IoC Container is: " + veh.getName());
 
         String hello = context.getBean(String.class);

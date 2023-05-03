@@ -9,11 +9,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Example26_BeanWebScopes" />
         <module name="Example13_AutowiredOnSetter" />
+        <module name="SPRING" />
         <module name="Example19_SimpleWebApp" />
         <module name="Example22_HeaderFooterCourse" />
         <module name="Example23_RequestParameters" />
         <module name="Example25_ValidatingTheInputs" />
-        <module name="Example1_BeansCreation" />
         <module name="Example17_AOP" />
         <module name="Example27_SpringSecurityIntro" />
         <module name="Example11_WiringUsingMethodParameter" />
@@ -35,6 +35,7 @@
       <module name="Example15_QualifierAnnotation" target="18" />
       <module name="Example16_Assignment" target="18" />
       <module name="Example18_AOP_Implementation" target="18" />
+      <module name="Example1_BeansCreation" target="18" />
       <module name="Example2" target="18" />
       <module name="Example20_Thymeleaf (1)" target="17" />
       <module name="Example20_Thymeleaf (2)" target="17" />
@@ -52,7 +53,6 @@
       <module name="Example_SimpleWebApp (2)" target="17" />
       <module name="Exmaple10_Wiring" target="18" />
       <module name="Exmaple10_WiringUsingMethodCall" target="18" />
-      <module name="SPRING" target="18" />
       <module name="Spring1" target="18" />
       <module name="untitled1" target="18" />
     </bytecodeTargetLevel>
