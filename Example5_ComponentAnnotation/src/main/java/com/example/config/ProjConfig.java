@@ -9,5 +9,4 @@ import org.springframework.context.annotation.Primary;
 @Configuration
 @ComponentScan(basePackages = "com.example.beans")
 public class ProjConfig {
-
 }
