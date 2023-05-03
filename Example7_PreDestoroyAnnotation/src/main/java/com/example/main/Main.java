@@ -10,8 +10,6 @@ public class Main {
         var context = new AnnotationConfigApplicationContext(ProjConfig.class);
         Vehicle veh = context.getBean(Vehicle.class);
         System.out.println("The bean of the IoC Container is: " + veh.getName());
-
-        veh.hello();
         context.close();
     }
 }
