@@ -12,4 +12,12 @@ public class HomeController {
         model.addAttribute("username", "Bobzero");
         return "home.html";
     }
+
+    @RequestMapping("/information")
+    public String personalInformation(Model model) {
+        model.addAttribute("username", "Bobzero");
+        model.addAttribute("surname", "TheProblem");
+        model.addAttribute("age", "23");
+        return "info.html";
+    }
 }
