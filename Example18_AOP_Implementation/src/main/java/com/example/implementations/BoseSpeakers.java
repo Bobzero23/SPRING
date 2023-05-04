@@ -1,7 +1,7 @@
 package com.example.implementations;
 
-import com.solution.interfaces.Speakers;
-import com.solution.model.Song;
+import com.example.interfaces.Speakers;
+import com.example.model.Song;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 

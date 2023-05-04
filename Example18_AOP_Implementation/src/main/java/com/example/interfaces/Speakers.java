@@ -1,6 +1,6 @@
 package com.example.interfaces;
 
-import com.solution.model.Song;
+import com.example.model.Song;
 
 public interface Speakers {
     String makeSound(Song song);

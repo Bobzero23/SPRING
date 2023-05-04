@@ -2,7 +2,7 @@ package com.example.main;
 
 import com.example.services.VehicleService;
 import com.example.configs.ProjConfig;
-import com.solution.model.Song;
+import com.example.model.Song;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
