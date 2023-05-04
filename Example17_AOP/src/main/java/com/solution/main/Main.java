@@ -16,9 +16,11 @@ public class Main {
         song.setTitle("Blank Space");
         song.setSingerName("Tylor Swift");
         boolean vehicleStarted = true;
-        String moveVehicleStatus = vehicleService.moveVehicle(vehicleStarted);
+        String moveVehicleStatus = vehicleService.moveVehicle(true);
+        System.out.println(moveVehicleStatus);
         String playMusicStatus = vehicleService.playMusic(vehicleStarted, song);
         System.out.println(playMusicStatus);
         String applyBreakStatus = vehicleService.applyBrake(vehicleStarted);
+        System.out.println(applyBreakStatus);
     }
 }

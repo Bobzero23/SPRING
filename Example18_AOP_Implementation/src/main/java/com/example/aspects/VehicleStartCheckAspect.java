@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 @Order(1)
 public class VehicleStartCheckAspect {
 
-    private Logger logger = Logger.getLogger(VehicleStartCheckAspect.class.getName());
+    private final Logger logger = Logger.getLogger(VehicleStartCheckAspect.class.getName());
     @Before("execution(* com.example.services.*.*(..)) && args(vehicleStarted,..)")
     public void checkVehicleStarted(JoinPoint joinPoint, boolean vehicleStarted) throws Throwable{
         if (!vehicleStarted) {
