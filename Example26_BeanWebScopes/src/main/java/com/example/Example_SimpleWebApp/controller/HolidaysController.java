@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
 @Controller
 public class HolidaysController {
 
-    @GetMapping("/holidays/{display}")
+    @GetMapping("/holidays/{display:all}")
     public String displayHolidays(@PathVariable String display,  Model model) {
 
         if(null != display && display.equals("all")) {

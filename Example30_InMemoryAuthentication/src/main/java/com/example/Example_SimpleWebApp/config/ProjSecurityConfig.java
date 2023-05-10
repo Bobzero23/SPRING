@@ -37,17 +37,17 @@ public class ProjSecurityConfig {
     @Bean
     public InMemoryUserDetailsManager userDetailsService() {
 
-        UserDetails admin = User.withDefaultPasswordEncoder()
+        UserDetails admin = User.builder()
                 .username("user")
                 .password("12345")
                 .roles("USER")
                 .build();
-        UserDetails user = User.withDefaultPasswordEncoder()
+        UserDetails user = User.builder()
                 .username("admin")
                 .password("54321")
                 .roles("USER","ADMIN")
                 .build();
-        UserDetails bob = User.withDefaultPasswordEncoder()
+        UserDetails bob = User.builder()
                 .username("Bobzero")
                 .password("415415")
                 .roles("USER")
@@ -55,13 +55,4 @@ public class ProjSecurityConfig {
         return new InMemoryUserDetailsManager(user, admin, bob);
     }
 
-
-    //This one is not being used anymore
- /*   protected void configure(AuthenticationManagerBuilder auth) throws Exception{
-        auth.inMemoryAuthentication()
-                .withUser("user").password("1234").roles("USER")
-                .and()
-                .withUser("admin").password("4321").roles("USER","ADMIN")
-                .and().passwordEncoder(NoOpPasswordEncoder.getInstance());
-    }*/
 }
