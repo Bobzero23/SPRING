@@ -22,7 +22,7 @@ public class ProjSecurityConfig {
                .requestMatchers("/home").permitAll()
                .requestMatchers("/holidays/**").permitAll()
                .requestMatchers("/contact").authenticated()
-               .requestMatchers("/saveMsg").permitAll()
+               .requestMatchers("/saveMsg").denyAll()
                .requestMatchers("/courses").permitAll()
                .requestMatchers("/about").permitAll()
                .requestMatchers("/login").permitAll() //new
