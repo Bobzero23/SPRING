@@ -3,11 +3,11 @@ package com.example.Example_SimpleWebApp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
@@ -35,21 +35,27 @@ public class ProjSecurityConfig {
     }
 
     @Bean
+    public PasswordEncoder passwordEncoder() {
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+    }
+
+    @Bean
     public InMemoryUserDetailsManager userDetailsService() {
+        PasswordEncoder passwordEncoder = passwordEncoder();
 
         UserDetails admin = User.builder()
                 .username("user")
-                .password("12345")
+                .password(passwordEncoder().encode("12345"))
                 .roles("USER")
                 .build();
         UserDetails user = User.builder()
                 .username("admin")
-                .password("54321")
+                .password(passwordEncoder().encode("54321"))
                 .roles("USER","ADMIN")
                 .build();
         UserDetails bob = User.builder()
                 .username("Bobzero")
-                .password("415415")
+                .password(passwordEncoder().encode("415415"))
                 .roles("USER")
                 .build();
         return new InMemoryUserDetailsManager(user, admin, bob);
