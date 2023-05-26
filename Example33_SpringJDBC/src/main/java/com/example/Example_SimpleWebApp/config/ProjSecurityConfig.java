@@ -19,7 +19,7 @@ public class ProjSecurityConfig {
     SecurityFilterChain defaultSecurityFilterChain(HttpSecurity http) throws Exception {
         http.csrf().ignoringRequestMatchers("/saveMsg").ignoringRequestMatchers(PathRequest.toH2Console()).and()
                 .authorizeHttpRequests()
-                .requestMatchers("/dashboard").authenticated()
+                .requestMatchers("/dashboard").hasRole("ADMIN")
                 .requestMatchers("/displayMessages").hasRole("ADMIN")
                 .requestMatchers("/closeMsg/**").hasRole("ADMIN")
                 .requestMatchers("/home").permitAll()
